@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0B1B3B" name="theme-color"/>
+<title>.com — New Year Deal Intake</title>
+<!-- Icons and fonts -->
+<link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/images/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Main CSS -->
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<style>
+  /* New Year Deal Intake — Formspree brief embed */
+  .brief-wrap{padding:40px 0 70px;}
+  .brief-wrap .brief-head{max-width:var(--container);margin:0 auto 22px;padding:0 24px;}
+  .brief-wrap .brief-head h1{color:var(--navy);font-size:44px;line-height:1.08;margin:0 0 10px;}
+  .brief-wrap .brief-head p{color:rgba(11,27,59,.72);margin:0 0 16px;max-width:62ch;}
+  .brief-wrap .brief-head h2{margin:0;color:var(--navy);font-size:18px;font-weight:700;letter-spacing:.02em;text-transform:none;}
+  .brief-grid{max-width:var(--container);margin:0 auto;padding:0 24px;display:grid;grid-template-columns: 1.05fr .95fr;gap:24px;align-items:start;}
+  .brief-left,.brief-right{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:22px;}
+  .brief-left .field{margin-bottom:14px;}
+  .brief-left label{display:block;font-weight:650;color:var(--navy);margin:0 0 6px;}
+  .brief-left input[type="text"],
+  .brief-left input[type="email"],
+  .brief-left select,
+  .brief-left textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;outline:none;background:#fff;}
+  .brief-left textarea{resize:vertical;}
+  .brief-left .checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;}
+  .brief-left .checks label{display:flex;gap:10px;align-items:center;margin:0;color:rgba(11,27,59,.88);font-weight:500;}
+  .brief-left .hint{display:block;margin-top:8px;color:rgba(11,27,59,.62);}
+  .divider{border:0;border-top:1px solid var(--line);margin:18px 0;}
+  .subhead{margin:0 0 10px;color:var(--navy);font-size:14px;letter-spacing:.08em;text-transform:uppercase;}
+  .submit-btn{margin-top:8px;width:100%;border:0;border-radius:999px;padding:12px 16px;font-weight:700;cursor:pointer;background:var(--teal);color:var(--navy);}
+  .submit-btn:hover{filter:brightness(.98);}
+  .tiny-note{margin:10px 0 0;color:rgba(11,27,59,.55);font-size:12px;}
+  .brief-preview{position:sticky;top:90px;}
+  .brief-preview pre{margin:0;white-space:pre-wrap;word-wrap:break-word;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);padding:16px;color:rgba(11,27,59,.9);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:12.5px;line-height:1.4;}
+  @media (max-width: 980px){
+    .brief-grid{grid-template-columns:1fr;}
+    .brief-preview{position:static;}
+    .brief-wrap .brief-head h1{font-size:36px;}
+  }
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="brand" href="index.html">
+<img alt=".com" src="assets/images/logo-wordmark.png"/>
+<span class="brand-tagline">The part of the internet that matters</span></a>
+<button aria-expanded="false" aria-label="Open menu" class="mobile-toggle" id="mobileToggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary navigation" class="nav" id="siteNav">
+<a href="index.html">Home</a>
+<a href="deal.html">New Year’s Deal</a>
+<a href="services.html">Services</a>
+<!-- Contact link removed from the header menu -->
+<a class="btn btn-ghost" href="business-in-a-box.html">Business in a Box</a><a class="btn btn-primary" data-open-drawer="" href="#">Let’s Talk</a>
+</nav>
+</div>
+</header>
+<!-- Drawer copied from other pages -->
+<div aria-hidden="true" class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside aria-hidden="true" aria-label="Quick contact panel" class="drawer" id="drawer">
+<div class="drawer-header">
+<strong>Quick start</strong>
+<button aria-label="Close panel" class="drawer-close" id="drawerClose">✕</button>
+</div>
+<div class="drawer-body">
+<div class="drawer-card">
+<div class="panel-title" style="margin-bottom:10px;">
+<strong>New Year’s Special</strong>
+<img alt="" src="assets/images/logo-mark.png"/>
+</div>
+<p>A streamlined way to get online with a clean, professional 2‑page site.</p>
+<div class="drawer-actions" style="margin-top:12px;">
+<a class="btn btn-primary" href="deal.html">View the Special</a>
+<a class="btn btn-ghost" href="contact.html">Contact</a>
+</div>
+<p style="margin-top:10px;"><small>Hosting is available as an option after the first month.</small></p>
+</div>
+<div class="drawer-card">
+<strong style="display:block;margin-bottom:6px;">Prefer details first?</strong>
+<p style="margin:0 0 10px 0;">Explore tiers, add-ons, and hosting options—no pricing shown outside the Special.</p>
+<a class="btn btn-ghost" href="services.html">Explore Services</a>
+</div>
+</div>
+</aside>
+<main id="main">
+<section class="brief-wrap">
+  <div class="brief-head">
+    <h1>Website Build Brief</h1>
+    <p>Fill out the details below. Your answers will appear in the brief preview.</p>
+    <h2>Review Your Website Brief</h2>
+  </div>
+
+  <form
+    id="websiteBriefForm"
+    action="https://formspree.io/f/xrepeazd"
+    method="POST"
+    enctype="multipart/form-data"
+    class="brief-grid"
+  >
+
+    <!-- LEFT: INPUTS -->
+    <div class="brief-left">
+
+      <div class="field">
+        <label for="businessType">Business Type</label>
+        <select id="businessType" name="business_type" required>
+          <option value="">Select one</option>
+          <option>Service-based</option>
+          <option>Product-based</option>
+          <option>Both (services + products)</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="businessSummary">Business Summary</label>
+        <input id="businessSummary" name="business_summary" type="text" placeholder="Example: Dog walkers" required />
+      </div>
+
+      <div class="field">
+        <label for="audience">Audience</label>
+        <input id="audience" name="audience" type="text" placeholder="Example: Pet owners" required />
+      </div>
+
+      <div class="field">
+        <label for="websiteGoal">Website Goal</label>
+        <input id="websiteGoal" name="website_goal" type="text" placeholder="Example: Book appointments" required />
+      </div>
+
+      <div class="field">
+        <label for="pages">Pages</label>
+        <div class="checks">
+          <label><input type="checkbox" name="pages" value="Home"> Home</label>
+          <label><input type="checkbox" name="pages" value="Services"> Services</label>
+          <label><input type="checkbox" name="pages" value="About"> About</label>
+          <label><input type="checkbox" name="pages" value="Contact"> Contact</label>
+          <label><input type="checkbox" name="pages" value="FAQ"> FAQ</label>
+          <label><input type="checkbox" name="pages" value="Other"> Other</label>
+        </div>
+        <small class="hint">Select the pages you want included.</small>
+      </div>
+
+      <div class="field">
+        <label for="contactMethod">Contact Method</label>
+        <select id="contactMethod" name="contact_method" required>
+          <option value="">Select one</option>
+          <option>Contact form</option>
+          <option>Email</option>
+          <option>Phone</option>
+          <option>Calendly / Booking link</option>
+          <option>DM / Social link</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="domain">Domain</label>
+        <input id="domain" name="domain" type="text" placeholder="example.com (or leave blank if you don’t have one yet)" />
+      </div>
+
+      <div class="field">
+        <label for="businessEmail">Business Email</label>
+        <select id="businessEmail" name="business_email" required>
+          <option value="">Select one</option>
+          <option>Yes</option>
+          <option>No</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Design</h3>
+
+      <div class="field">
+        <label for="layoutStyle">Layout Style</label>
+        <input id="layoutStyle" name="layout_style" type="text" placeholder="Example: brand-minimal" />
+      </div>
+
+      <div class="field">
+        <label for="brandFeel">Brand Feel</label>
+        <input id="brandFeel" name="brand_feel" type="text" placeholder="Example: modern" />
+      </div>
+
+      <div class="field">
+        <label for="colorPalette">Color Palette</label>
+        <input id="colorPalette" name="color_palette" type="text" placeholder="Example: modern-1" />
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Content</h3>
+
+      <div class="field">
+        <label for="copyStatus">Copy Status</label>
+        <select id="copyStatus" name="copy_status">
+          <option value="">Select one</option>
+          <option>Yes — I will provide my text</option>
+          <option>No — please generate</option>
+          <option>Some — I have a draft</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="writtenText">Written Text</label>
+        <textarea id="writtenText" name="written_text" rows="4" placeholder="Paste any written text you already have..."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="aboutInfo">About Info</label>
+        <textarea id="aboutInfo" name="about_info" rows="3" placeholder="Tell us what you want visitors to know about your business..."></textarea>
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Assets</h3>
+
+      <div class="field">
+        <label for="logoUpload">Logo</label>
+        <input id="logoUpload" name="logo" type="file" />
+      </div>
+
+      <div class="field">
+        <label for="imagesUpload">Images</label>
+        <input id="imagesUpload" name="images" type="file" multiple />
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Package</h3>
+
+      <div class="field">
+        <label for="package">Package</label>
+        <input id="package" name="package" type="text" placeholder="Example: Business in a Box / New Year Deal / Other" />
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Timeline</h3>
+
+      <div class="field">
+        <label for="timeline">Timeline</label>
+        <input id="timeline" name="timeline" type="text" placeholder="Example: ASAP / 1–2 weeks / specific date" />
+      </div>
+
+      <hr class="divider" />
+
+      <h3 class="subhead">Client Details</h3>
+
+      <div class="field">
+        <label for="clientName">Name</label>
+        <input id="clientName" name="name" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="clientEmail">Email</label>
+        <input id="clientEmail" name="email" type="email" required />
+      </div>
+
+      <div class="field">
+        <label for="clientBusinessName">Business Name</label>
+        <input id="clientBusinessName" name="business_name" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Anything else we should know?"></textarea>
+      </div>
+
+      <!-- This sends the formatted brief as a single field too -->
+      <input type="hidden" id="briefTextHidden" name="brief_text" value="" />
+
+      <!-- Optional redirect after submit -->
+      <input type="hidden" name="_next" value="thank-you.html" />
+
+      <button class="submit-btn" type="submit">Submit Intake</button>
+      <p class="tiny-note">Your responses will be sent when deployed with a form service.</p>
+    </div>
+
+    <!-- RIGHT: PREVIEW -->
+    <div class="brief-right">
+      <div class="brief-preview">
+        <pre id="briefPreview">CLIENT WEBSITE BRIEF — .com
+
+Business Type:
+Business Summary:
+Audience:
+
+Website Goal:
+Pages:
+Contact Method:
+Domain:
+Business Email:
+
+Design
+Layout Style:
+Brand Feel:
+Color Palette:
+
+Content
+Copy Status:
+Written Text:
+About Info:
+
+Assets
+Logo:
+Images:
+
+Package:
+
+Timeline:
+
+Client Details
+Name:
+Email:
+Business Name:
+Notes:
+</pre>
+      </div>
+    </div>
+
+  </form>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<img alt=".com" src="assets/images/logo-wordmark.png"/><div class="brand-tagline footer-tagline">The part of the internet that matters</div>
+<p style="margin-top:6px;color:rgba(11,27,59,.72);max-width:52ch;">.com helps solo-preneurs and small businesses launch professional websites, simply and affordably.</p>
+</div>
+<div aria-label="Footer links" class="footer-links">
+<a href="deal.html">New Year’s Deal</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="faq.html">FAQ</a>
+<a href="terms.html">Terms of Service</a>
+<a href="refund.html">Refund Policy</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 .com. All rights reserved.</span>
+</div>
+</div>
+</footer>
+<!-- Main scripts -->
+<script defer="" src="assets/js/main.js"></script>
+<script>
+  (function(){
+    const form = document.getElementById('websiteBriefForm');
+    const preview = document.getElementById('briefPreview');
+    const hidden = document.getElementById('briefTextHidden');
+    if(!form || !preview || !hidden) return;
+
+    const getVal = (id) => {
+      const el = document.getElementById(id);
+      if(!el) return '';
+      if(el.type === 'file'){
+        const files = Array.from(el.files || []).map(f => f.name);
+        return files.length ? files.join(', ') : '';
+      }
+      return (el.value || '').trim();
+    };
+
+    const getPages = () => {
+      const boxes = form.querySelectorAll('input[type="checkbox"][name="pages"]:checked');
+      const vals = Array.from(boxes).map(b => b.value);
+      return vals.join(', ');
+    };
+
+    const buildText = () => {
+      return `CLIENT WEBSITE BRIEF — .com
+
+Business Type: ${getVal('businessType')}
+Business Summary: ${getVal('businessSummary')}
+Audience: ${getVal('audience')}
+
+Website Goal: ${getVal('websiteGoal')}
+Pages: ${getPages()}
+Contact Method: ${getVal('contactMethod')}
+Domain: ${getVal('domain')}
+Business Email: ${getVal('businessEmail')}
+
+Design
+Layout Style: ${getVal('layoutStyle')}
+Brand Feel: ${getVal('brandFeel')}
+Color Palette: ${getVal('colorPalette')}
+
+Content
+Copy Status: ${getVal('copyStatus')}
+Written Text: ${getVal('writtenText')}
+About Info: ${getVal('aboutInfo')}
+
+Assets
+Logo: ${getVal('logoUpload')}
+Images: ${getVal('imagesUpload')}
+
+Package: ${getVal('package')}
+
+Timeline: ${getVal('timeline')}
+
+Client Details
+Name: ${getVal('clientName')}
+Email: ${getVal('clientEmail')}
+Business Name: ${getVal('clientBusinessName')}
+Notes: ${getVal('notes')}
+`;
+    };
+
+    const update = () => {
+      const text = buildText();
+      preview.textContent = text;
+      hidden.value = text;
+    };
+
+    form.addEventListener('input', update);
+    form.addEventListener('change', update);
+    form.addEventListener('submit', update);
+
+    update();
+  })();
+</script>
+</body>
+</html>
