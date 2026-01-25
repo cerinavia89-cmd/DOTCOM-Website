@@ -164,3 +164,16 @@ button.btn.primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(37, 99, 235, 0.45) !important;
 }
+a.btn:not(.primary),
+.btn:not(.primary) {
+  background: #ffffff !important;
+  border: 1.5px solid #E5E7EB !important;
+  color: #0B1220 !important;
+  font-weight: 600;
+}
+
+a.btn:not(.primary):hover,
+.btn:not(.primary):hover {
+  background: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+}
