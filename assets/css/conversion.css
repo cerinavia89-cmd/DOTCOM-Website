@@ -97,6 +97,7 @@ p{margin:0 0 12px; color:var(--muted)}
   color:#fff;
   box-shadow: 0 10px 18px rgba(37, 99, 235, 0.20);
 }
+
 .btn.ghost{
   background:transparent;
 }
@@ -138,12 +139,14 @@ p{margin:0 0 12px; color:var(--muted)}
   display:none;
   z-index:999;
 }
+
 .sticky-cta .container{display:flex; gap:10px; align-items:center; justify-content:space-between}
 .sticky-cta .btn{flex:1}
 @media (max-width:820px){
   .sticky-cta{display:block}
   body{padding-bottom:70px}
 }
+
 /* FORCE stronger primary button style for DotCom Online */
 
 a.btn.primary,
@@ -164,6 +167,7 @@ button.btn.primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(37, 99, 235, 0.45) !important;
 }
+
 a.btn:not(.primary),
 .btn:not(.primary) {
   background: #ffffff !important;
