@@ -144,3 +144,23 @@ p{margin:0 0 12px; color:var(--muted)}
   .sticky-cta{display:block}
   body{padding-bottom:70px}
 }
+/* FORCE stronger primary button style for DotCom Online */
+
+a.btn.primary,
+.btn.primary,
+button.btn.primary {
+  background: linear-gradient(135deg, #0EA5A4 0%, #2563EB 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 700;
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35) !important;
+}
+
+/* Hover effect */
+a.btn.primary:hover,
+.btn.primary:hover,
+button.btn.primary:hover {
+  background: linear-gradient(135deg, #0d9488 0%, #1d4ed8 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.45) !important;
+}
