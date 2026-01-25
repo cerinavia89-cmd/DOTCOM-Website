@@ -181,3 +181,47 @@ a.btn:not(.primary):hover,
   background: #F8FAFC !important;
   border-color: #CBD5E1 !important;
 }
+
+/* =========================
+   DOTCOM CONVERSION BUTTONS
+   (no conflict with existing site styles)
+   ========================= */
+
+.dc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+/* Primary CTA */
+.dc-btn-primary {
+  background: linear-gradient(135deg, #0EA5A4 0%, #2563EB 100%);
+  color: #ffffff !important;
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.35);
+}
+
+.dc-btn-primary:hover {
+  background: linear-gradient(135deg, #0d9488 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(37, 99, 235, 0.45);
+}
+
+/* Secondary CTA */
+.dc-btn-secondary {
+  background: #ffffff;
+  color: #0B1220 !important;
+  border: 1.6px solid #E5E7EB;
+}
+
+.dc-btn-secondary:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
