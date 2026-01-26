@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0B1B3B" name="theme-color"/>
+<title>Start Your Website – .com</title>
+<!-- Icons and fonts -->
+<link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/images/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Main CSS -->
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="assets/css/conversion.css" rel="stylesheet"/>
+<style>
+/* Intake-only alignment fixes (Steps 1 and 21 only) */
+
+/* IMPORTANT:
+   Global site CSS sets input{width:100%; padding:12px;} which breaks radios/checkboxes.
+   These overrides are narrowly scoped to Step 1 package radios and Step 21 static-hosting checkbox. */
+
+/* Step 1: Package selection - align radio + text to the left (radio under the "W") */
+.package-options{
+  text-align:left !important;
+}
+.package-options .package-option{
+  display:grid !important;
+  grid-template-columns: 18px 1fr !important;
+  column-gap:10px !important;
+  align-items:start !important;
+  justify-items:start !important;
+  width:100% !important;
+  margin:8px 0 !important;
+  padding:0 !important;
+  text-align:left !important;
+}
+.package-options .package-option input[type="radio"]{
+  width:auto !important;
+  padding:0 !important;
+  margin:2px 0 0 0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  appearance:auto !important;
+  -webkit-appearance:auto !important;
+  -moz-appearance:auto !important;
+}
+.package-options .package-option span{
+  min-width:0 !important;
+  width:auto !important;
+  max-width:none !important;
+  display:block !important;
+  text-align:left !important;
+  white-space:normal !important;
+  word-break:normal !important;
+  overflow-wrap:break-word !important;
+}
+
+/* Step 21: Static hosting checkbox alignment (checkbox under the "W" in "Website") */
+.static-hosting-row{
+  display:grid !important;
+  grid-template-columns: 18px 1fr !important;
+  column-gap:8px !important;
+  align-items:start !important;
+  justify-items:start !important;
+  width:100% !important;
+  text-align:left !important;
+}
+.static-hosting-row input[type="checkbox"]{
+  width:auto !important;
+  padding:0 !important;
+  margin:2px 0 0 0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  appearance:auto !important;
+  -webkit-appearance:auto !important;
+  -moz-appearance:auto !important;
+}
+.static-hosting-row .static-hosting-label{
+  margin:0 !important;
+  width:auto !important;
+  text-align:left !important;
+  display:block !important;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="brand" href="index.html">
+<img alt=".com" src="assets/images/logo-wordmark.png"/>
+<span class="brand-tagline">The part of the internet that matters</span></a>
+<button aria-expanded="false" aria-label="Open menu" class="mobile-toggle" id="mobileToggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary navigation" class="nav" id="siteNav">
+<a href="index.html">Home</a>
+<a href="deal.html">72-Hour Website</a>
+<a href="services.html">Packages</a>
+<!-- Contact link removed from the header menu -->
+<a class="btn btn-ghost" href="business-in-a-box.html">Business in a Box</a>
+</nav>
+</div>
+</header>
+<!-- Slide-over drawer copied from other pages -->
+<div aria-hidden="true" class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside aria-hidden="true" aria-label="Quick contact panel" class="drawer" id="drawer">
+<div class="drawer-header">
+<strong>Quick start</strong>
+<button aria-label="Close panel" class="drawer-close" id="drawerClose">✕</button>
+</div>
+<div class="drawer-body">
+<div class="drawer-card">
+<div class="panel-title" style="margin-bottom:10px;">
+<strong>New Year’s Special</strong>
+<img alt="" src="assets/images/logo-mark.png"/>
+</div>
+<p>A streamlined way to get online with a clean, professional 2‑page site.</p>
+<div class="drawer-actions" style="margin-top:12px;">
+<a class="btn btn-primary" href="deal.html">View the Special</a>
+<!-- Route contact link to the contact form -->
+<a class="dc-btn dc-btn-primary" href="start.html">Start My Website →</a>
+</div>
+<p style="margin-top:10px;"><small>Hosting is available as an option after the first month.</small></p>
+</div>
+<div class="drawer-card">
+<strong style="display:block;margin-bottom:6px;">Prefer details first?</strong>
+<p style="margin:0 0 10px 0;">Explore tiers, add-ons, and hosting options—no pricing shown outside the Special.</p>
+<a class="dc-btn dc-btn-secondary" href="services.html">Explore Packages</a>
+</div>
+<div class="drawer-card">
+<strong style="display:block;margin-bottom:6px;">Business in a Box Bundle</strong>
+<p style="margin:0 0 10px 0;">A bundled launch package with website + essentials—designed to get you online fast.</p>
+<a class="btn btn-ghost" href="business-in-a-box.html">View Business in a Box</a>
+</div>
+</div>
+</aside>
+<main id="main">
+<!-- Intake hero section -->
+<section class="hero" style="min-height:200px;">
+<div class="container">
+<div class="hero-copy">
+<h1>Start your website build</h1>
+<p>
+Answer a few quick questions so we can build your website the right way. This takes 2–4 minutes.
+</p>
+</div>
+</div>
+</section>
+<!-- Intake form container -->
+<section class="intake" style="padding-top:20px;padding-bottom:60px;">
+<div class="container" id="question-container">
+<!-- Questions will be injected here by intake.js -->
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<img alt=".com" src="assets/images/logo-wordmark.png"/><div class="brand-tagline footer-tagline">The part of the internet that matters</div>
+<p style="margin-top:6px;color:rgba(11,27,59,.72);max-width:52ch;">.com helps solo-preneurs and small businesses launch professional websites, simply and affordably.</p>
+</div>
+<div aria-label="Footer links" class="footer-links">
+<a href="deal.html">72-Hour Website</a>
+<a href="services.html">Packages</a>
+<a href="business-in-a-box.html">Business in a Box</a>
+<a href="contact.html">Contact</a>
+<a href="faq.html">FAQ</a>
+<a href="terms.html">Terms of Service</a>
+<a href="refund.html">Refund Policy</a>
+<a href="privacy.html">Privacy Policy</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 .com. All rights reserved.</span>
+</div>
+</div>
+</footer>
+<!-- Main scripts -->
+<script defer="" src="assets/js/main.js"></script>
+<script>
+/* Inline intake flow logic (intake.html only). */
+(function () {
+  const createEl = (tag, attrs = {}, children = []) => {
+    const el = document.createElement(tag);
+    Object.entries(attrs).forEach(([k, v]) => {
+      if (k === 'class') el.className = v;
+      else if (k === 'style') Object.assign(el.style, v);
+      else if (k.startsWith('on')) el.addEventListener(k.substring(2), v);
+      else el.setAttribute(k, v);
+    });
+    children.forEach(child => {
+      if (typeof child === 'string') el.appendChild(document.createTextNode(child));
+      else if (child) el.appendChild(child);
+    });
+    return el;
+  };
+
+  const container = document.getElementById('question-container');
+  const answers = {};
+
+  const REMOVED_STEP_IDS = new Set(['brand_notes', 'keywords']);
+
+  const steps = [
+    {
+      id: 'package',
+      label: 'Which website package are you starting?',
+      render() {
+        const wrapper = createEl('div', { class: 'card white package-options', style: { marginBottom: '20px', textAlign: 'left' } }, []);
+        wrapper.appendChild(createEl('h3', {}, ['Which website package are you starting?']));
+
+        const makeRadio = (value, text, required = false) => {
+          const input = createEl('input', {
+            type: 'radio',
+            name: 'package',
+            value,
+            required: required === true,
+            style: { margin: '2px 0 0 0', flex: '0 0 auto' }
+          });
+          const textSpan = createEl('span', {
+            style: { display: 'block', textAlign: 'left', flex: '1 1 auto', width: 'auto', maxWidth: 'none' }
+          }, [text]);
+          const label = createEl('label', {
+            class: 'package-option',
+            style: {
+              display: 'flex',
+              alignItems: 'flex-start',
+              justifyContent: 'flex-start',
+              gap: '10px',
+              margin: '8px 0',
+              width: '100%',
+              padding: '0',
+              textAlign: 'left'
+            }
+          }, [input, textSpan]);
+          return label;
+        };
+
+        wrapper.appendChild(makeRadio('72-Hour Website', '72-Hour Website ($299 setup + $59/month)', true));
+        wrapper.appendChild(makeRadio('Business in a Box', 'Business in a Box ($599 setup + $119/month)'));
+        wrapper.appendChild(makeRadio('Growth Website', 'Growth Website (custom pricing)'));
+
+        return {
+          el: wrapper,
+          getValue: () => {
+            const checked = wrapper.querySelector('input[name="package"]:checked');
+            return checked ? checked.value : '';
+          }
+        };
+      }
+    },
+
+    {
+      id: 'business_type',
+      label: 'What type of business do you run?',
+      render() {
+        const select = createEl('select', { id: 'businessType', name: 'businessType', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select a type']));
+        ['Service-based', 'Product-based', 'E-commerce', 'Non-profit', 'Other'].forEach(val => {
+          select.appendChild(createEl('option', { value: val }, [val]));
+        });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'businessType' }, ['Business type']),
+          select
+        ]);
+        return { el: field, getValue: () => select.value };
+      }
+    },
+
+    {
+      id: 'description',
+      label: 'What does your business do?',
+      render() {
+        const input = createEl('input', { id: 'description', name: 'description', type: 'text', required: true });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'description' }, ['What does your business do?']),
+          input
+        ]);
+        return { el: field, getValue: () => input.value.trim() };
+      }
+    },
+
+    {
+      id: 'target_audience',
+      label: 'Who is your ideal customer?',
+      render() {
+        const input = createEl('input', { id: 'targetAudience', name: 'targetAudience', type: 'text', required: true });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'targetAudience' }, ['Who is your ideal customer?']),
+          input
+        ]);
+        return { el: field, getValue: () => input.value.trim() };
+      }
+    },
+
+    {
+      id: 'website_goal',
+      label: 'What should your website help you do?',
+      render() {
+        const textarea = createEl('textarea', { id: 'websiteGoal', name: 'websiteGoal', rows: '4', required: true }, []);
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'websiteGoal' }, ['What should your website help you do?']),
+          textarea
+        ]);
+        return { el: field, getValue: () => textarea.value.trim() };
+      }
+    },
+
+    // Step 6 (only for 72-Hour Website)
+    {
+      id: 'pages',
+      label: 'Which page combination do you need?',
+      render() {
+        const select = createEl('select', { id: 'pagesSelect', name: 'pagesSelect', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select pages']));
+        select.appendChild(createEl('option', { value: 'Home + Contact' }, ['Home + Contact']));
+        select.appendChild(createEl('option', { value: 'Home + Services' }, ['Home + Services']));
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'pagesSelect' }, ['Page selection']),
+          select
+        ]);
+        return { el: field, getValue: () => select.value };
+      }
+    },
+
+    // Step 7 (only for 72-Hour Website)
+    {
+      id: 'contact_method',
+      label: 'What contact method would you like for your website?',
+      render() {
+        const select = createEl('select', { id: 'contactMethod', name: 'contactMethod', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select method']));
+        ['Form', 'Email'].forEach(val => select.appendChild(createEl('option', { value: val }, [val])));
+
+        const note = createEl('p', { style: { margin: '6px 0 0', color: '#6b7280', fontSize: '13px' } }, [
+          'If Home + Services is selected an email link/button will be used.'
+        ]);
+
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'contactMethod' }, ['What contact method would you like for your website?']),
+          select,
+          note
+        ]);
+
+        return { el: field, getValue: () => select.value };
+      }
+    },
+
+    // Step 8
+    {
+      id: 'domain_status',
+      label: 'Do you have a domain for your website?',
+      render() {
+        const select = createEl('select', { id: 'domainStatus', name: 'domainStatus', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select status']));
+        ['Yes', 'No', 'Help me get a domain'].forEach(val => {
+          select.appendChild(createEl('option', { value: val }, [val]));
+        });
+
+        const domainWrap = createEl('div', { style: { marginTop: '10px', display: 'none' } }, []);
+        const domainInput = createEl('input', {
+          id: 'domainInput',
+          name: 'domainInput',
+          type: 'text',
+          placeholder: 'yourdomain.com'
+        });
+        domainWrap.appendChild(createEl('label', { for: 'domainInput', style: { fontSize: '13px', color: 'rgba(11,27,59,.72)', marginBottom: '6px', display: 'block' } }, ['Domain (if you have one)']));
+        domainWrap.appendChild(domainInput);
+
+        const onChange = () => {
+          if (select.value === 'Yes') domainWrap.style.display = 'block';
+          else domainWrap.style.display = 'none';
+        };
+        select.addEventListener('change', onChange);
+
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'domainStatus' }, ['Do you have a domain for your website?']),
+          select,
+          domainWrap
+        ]);
+
+        return {
+          el: field,
+          getValue: () => ({
+            status: select.value,
+            domain: (select.value === 'Yes') ? domainInput.value.trim() : ''
+          }),
+          hydrate: (saved) => {
+            if (!saved) return;
+            if (saved.status) select.value = saved.status;
+            if (saved.domain) domainInput.value = saved.domain;
+            onChange();
+          }
+        };
+      }
+    },
+
+    {
+      id: 'layout_style',
+      label: 'Choose a layout style',
+      render() {
+        // Present three layout images for selection. Use assets from assets/layouts.
+        const options = [
+          // Use correct paths for layout previews (files in /assets/layouts have spaces)
+          { value: 'classic-service', label: 'Classic Service', img: 'assets/layouts/classic - service.png' },
+          { value: 'brand-minimal', label: 'Brand Minimal', img: 'assets/layouts/brand - minimal.png' },
+          { value: 'offer-focused', label: 'Offer Focused', img: 'assets/layouts/offer - focused.png' }
+        ];
+        let selected = null;
+        const wrapper = createEl('div', { class: 'layout-options', style: { display: 'grid', gap: '16px', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', marginBottom: '24px' } });
+        options.forEach(opt => {
+          const imgEl = createEl('img', { src: opt.img, alt: opt.label, style: { width: '100%', height: 'auto', borderRadius: '12px', border: '2px solid transparent', cursor: 'pointer' } });
+          const caption = createEl('div', { style: { textAlign: 'center', marginTop: '6px', fontSize: '14px', color: 'var(--navy-2)' } }, [opt.label]);
+          const card = createEl('div', { style: { cursor: 'pointer' } }, [imgEl, caption]);
+          card.addEventListener('click', () => {
+            // remove highlight from previous selection
+            wrapper.querySelectorAll('img').forEach(i => { i.style.borderColor = 'transparent'; });
+            imgEl.style.borderColor = 'var(--teal)';
+            selected = opt.value;
+          });
+          wrapper.appendChild(card);
+        });
+        const field = createEl('div', {}, [
+          createEl('label', { style: { fontWeight: '600', display: 'block', marginBottom: '8px' } }, ['Select a layout style']),
+          wrapper
+        ]);
+        return {
+          el: field,
+          getValue: () => selected
+        };
+      }
+    },
+    {
+      id: 'brand_feel',
+      label: 'Choose a brand feel',
+      render() {
+        const feels = [
+          { value: 'modern', label: 'Modern & Professional' },
+          { value: 'warm', label: 'Warm & Friendly' },
+          { value: 'bold', label: 'Bold & Energetic' },
+          { value: 'calm', label: 'Calm & Minimal' }
+        ];
+        let selected = null;
+        const optionsContainer = createEl('div', { class: 'feel-options', style: { display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '24px' } });
+        feels.forEach(opt => {
+          const btn = createEl('button', { type: 'button', class: 'btn btn-ghost', style: { border: '2px solid var(--line)', borderRadius: '12px', padding: '12px 16px', cursor: 'pointer', flex: '1 1 220px' } }, [opt.label]);
+          btn.addEventListener('click', () => {
+            // reset others
+            optionsContainer.querySelectorAll('button').forEach(b => {
+              b.style.backgroundColor = 'transparent';
+              b.style.borderColor = 'var(--line)';
+            });
+            btn.style.backgroundColor = 'var(--teal)';
+            btn.style.borderColor = 'var(--teal)';
+            selected = opt.value;
+          });
+          optionsContainer.appendChild(btn);
+        });
+        const field = createEl('div', {}, [
+          createEl('label', { style: { fontWeight: '600', display: 'block', marginBottom: '8px' } }, ['Select a brand feel']),
+          optionsContainer
+        ]);
+        return {
+          el: field,
+          getValue: () => selected
+        };
+      }
+    },
+    {
+      id: 'color_palette',
+      label: 'Choose a color palette',
+      render() {
+        // This step depends on the previously selected brand_feel.
+        const feel = answers['brand_feel'];
+        const wrapper = createEl('div', { class: 'palette-options', style: { display: 'grid', gap: '16px', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', marginBottom: '24px' } });
+        let selected = null;
+        // Load five palette images for the selected feel
+        for (let i = 1; i <= 5; i++) {
+          const filename = `${feel}-${i}.png`;
+          const imgSrc = `assets/palettes/${filename}`;
+          const imgEl = createEl('img', { src: imgSrc, alt: `Palette ${i}`, style: { width: '100%', height: 'auto', borderRadius: '12px', border: '2px solid transparent', cursor: 'pointer' } });
+          const caption = createEl('div', { style: { textAlign: 'center', marginTop: '6px', fontSize: '14px', color: 'var(--navy-2)' } }, [`Palette ${i}`]);
+          const card = createEl('div', { style: { cursor: 'pointer' } }, [imgEl, caption]);
+          card.addEventListener('click', () => {
+            wrapper.querySelectorAll('img').forEach(iEl => { iEl.style.borderColor = 'transparent'; });
+            imgEl.style.borderColor = 'var(--teal)';
+            selected = `${feel}-${i}`;
+          });
+          wrapper.appendChild(card);
+        }
+        const field = createEl('div', {}, [
+          createEl('label', { style: { fontWeight: '600', display: 'block', marginBottom: '8px' } }, ['Select a color palette']),
+          wrapper
+        ]);
+        return {
+          el: field,
+          getValue: () => selected
+        };
+      }
+    },
+    // Step 12
+    {
+      id: 'copy_status',
+      label: 'Do you already have written text for your website? (Testimonials, credentials, services/ business/ organization description, etc.)',
+      render() {
+        const select = createEl('select', { id: 'copyStatus', name: 'copyStatus', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select status']));
+        ['Yes', 'Partially', 'No — please generate'].forEach(val => select.appendChild(createEl('option', { value: val }, [val])));
+
+        const detailsWrap = createEl('div', { style: { marginTop: '10px', display: 'none' } }, []);
+        const detailsInput = createEl('textarea', {
+          id: 'copyDetails',
+          name: 'copyDetails',
+          rows: '7',
+          placeholder: 'Copy and paste your wording here. Include where on your site to place the text.'
+        });
+        detailsWrap.appendChild(createEl('label', { for: 'copyDetails', style: { fontSize: '13px', color: 'rgba(11,27,59,.72)', marginBottom: '6px', display: 'block' } }, ['If yes, copy and paste below and tell us where on your site to place the text.']));
+        detailsWrap.appendChild(detailsInput);
+
+        const onChange = () => {
+          detailsWrap.style.display = (select.value === 'Yes') ? 'block' : 'none';
+        };
+        select.addEventListener('change', onChange);
+
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'copyStatus' }, ['Do you already have written text for your website? (Testimonials, credentials, services/ business/ organization description, etc.)']),
+          select,
+          detailsWrap
+        ]);
+
+        return {
+          el: field,
+          getValue: () => ({
+            status: select.value,
+            details: (select.value === 'Yes') ? detailsInput.value.trim() : ''
+          }),
+          hydrate: (saved) => {
+            if (!saved) return;
+            if (saved.status) select.value = saved.status;
+            if (saved.details) detailsInput.value = saved.details;
+            onChange();
+          }
+        };
+      }
+    },
+
+    {
+      id: 'about_text',
+      label: 'Tell us about your business (short)',
+      render() {
+        const textarea = createEl('textarea', { id: 'aboutText', name: 'aboutText', rows: '4', required: true }, []);
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'aboutText' }, ['Tell us about your business (short)']),
+          textarea
+        ]);
+        return { el: field, getValue: () => textarea.value.trim() };
+      }
+    },
+
+    // Step 14 (removed)
+    {
+      id: 'brand_notes',
+      label: 'Brand notes (removed)',
+      render() {
+        const field = createEl('div', { class: 'field' }, []);
+        return { el: field, getValue: () => '' };
+      }
+    },
+
+    // Step 15 (removed)
+    {
+      id: 'keywords',
+      label: 'Keywords (removed)',
+      render() {
+        const field = createEl('div', { class: 'field' }, []);
+        return { el: field, getValue: () => '' };
+      }
+    },
+
+    // Step 16
+    {
+      id: 'assets_ready',
+      label: 'Do you have a logo and/or brand photos ready?',
+      render() {
+        const select = createEl('select', { id: 'assetsReady', name: 'assetsReady', required: true }, []);
+        select.appendChild(createEl('option', { value: '', disabled: true, selected: true }, ['Select an option']));
+        ['Yes', 'No'].forEach(val => select.appendChild(createEl('option', { value: val }, [val])));
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'assetsReady' }, ['Do you have a logo and/or brand photos ready?']),
+          select
+        ]);
+        return { el: field, getValue: () => select.value };
+      }
+    },
+
+    {
+      id: 'full_name',
+      label: 'Your name',
+      render() {
+        const input = createEl('input', { id: 'fullName', name: 'fullName', type: 'text', required: true });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'fullName' }, ['Full name']),
+          input
+        ]);
+        return { el: field, getValue: () => input.value.trim() };
+      }
+    },
+
+    {
+      id: 'email',
+      label: 'Email',
+      render() {
+        const input = createEl('input', { id: 'email', name: 'email', type: 'email', required: true });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'email' }, ['Email address']),
+          input
+        ]);
+        return { el: field, getValue: () => input.value.trim() };
+      }
+    },
+
+    {
+      id: 'business_name',
+      label: 'Business name',
+      render() {
+        const input = createEl('input', { id: 'businessName', name: 'businessName', type: 'text', required: true });
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'businessName' }, ['Business name']),
+          input
+        ]);
+        return { el: field, getValue: () => input.value.trim() };
+      }
+    },
+
+    {
+      id: 'additional_notes',
+      label: 'Anything else you’d like us to know?',
+      render() {
+        const textarea = createEl('textarea', { id: 'additionalNotes', name: 'additionalNotes', rows: '4' }, []);
+        const field = createEl('div', { class: 'field' }, [
+          createEl('label', { for: 'additionalNotes' }, ['Anything else you’d like us to know?']),
+          textarea
+        ]);
+        return { el: field, getValue: () => textarea.value.trim() };
+      }
+    },
+
+    // Step 21
+    {
+      id: 'static_hosting',
+      label: 'Confirm static hosting',
+      render() {
+        const checkbox = createEl('input', {
+          id: 'staticHosting',
+          name: 'staticHosting',
+          type: 'checkbox',
+          required: true,
+          style: { margin: '2px 0 0 0', flex: '0 0 auto' }
+        });
+        const labelEl = createEl('label', {
+          for: 'staticHosting',
+          class: 'static-hosting-label',
+          style: { margin: '0', width: 'auto', textAlign: 'left', display: 'inline-block' }
+        }, ['I confirm I’m comfortable using static site hosting']);
+        const row = createEl('div', {
+          class: 'static-hosting-row',
+          style: { display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '8px', width: '100%', textAlign: 'left' }
+        }, [checkbox, labelEl]);
+        const field = createEl('div', { class: 'field' }, [row]);
+        return { el: field, getValue: () => checkbox.checked };
+      }
+    }
+  ];
+
+  let currentIndex = 0;
+
+  const sectionForStep = (stepId) => {
+    const businessDetails = new Set(['package','business_type','description','business_name']);
+    const websiteGoals = new Set(['website_goal','pages','contact_method','domain_status','static_hosting']);
+    const designPrefs = new Set(['layout_style','brand_feel','color_palette']);
+    const content = new Set(['copy_status','about_text','brand_notes','keywords','assets_ready','additional_notes']);
+    const contact = new Set(['full_name','email']);
+    if (businessDetails.has(stepId)) return 'Business details';
+    if (websiteGoals.has(stepId)) return 'Website goals';
+    if (designPrefs.has(stepId)) return 'Design preferences';
+    if (content.has(stepId)) return 'Content';
+    if (contact.has(stepId)) return 'Your contact info';
+    return '';
+  };
+
+  const isStepAvailable = (step) => {
+    if (!step) return false;
+    if (REMOVED_STEP_IDS.has(step.id)) return false;
+    if (step.id === 'pages' || step.id === 'contact_method') {
+      return answers.package === '72-Hour Website';
+    }
+    return true;
+  };
+
+  const nextAvailableIndex = (fromIdx) => {
+    for (let i = fromIdx + 1; i < steps.length; i++) {
+      if (isStepAvailable(steps[i])) return i;
+    }
+    return steps.length;
+  };
+
+  const prevAvailableIndex = (fromIdx) => {
+    for (let i = fromIdx - 1; i >= 0; i--) {
+      if (isStepAvailable(steps[i])) return i;
+    }
+    return 0;
+  };
+
+  const getSavedComposite = (stepId) => {
+    if (stepId === 'domain_status') {
+      return { status: answers.domain_status || '', domain: answers.domain_name || '' };
+    }
+    if (stepId === 'copy_status') {
+      return { status: answers.copy_status || '', details: answers.copy_details || '' };
+    }
+    return null;
+  };
+
+  function renderStep() {
+    // Ensure current index points to an available step
+    while (currentIndex < steps.length && !isStepAvailable(steps[currentIndex])) {
+      currentIndex = nextAvailableIndex(currentIndex - 1);
+    }
+
+    container.innerHTML = '';
+    const step = steps[currentIndex];
+    if (!step) {
+      showSummary();
+      return;
+    }
+
+    const rendered = step.render();
+    const el = rendered.el;
+    const getValue = rendered.getValue;
+    const hydrate = rendered.hydrate;
+
+    // Prepopulate
+    const savedValue = answers[step.id];
+    if (hydrate) {
+      hydrate(getSavedComposite(step.id));
+    } else if (savedValue !== undefined && savedValue !== null) {
+      const inputEl = el.querySelector('input, select, textarea');
+      if (inputEl) inputEl.value = savedValue;
+    }
+
+    // Progress uses original numbering (keeps Step 16 etc.)
+    const progress = createEl('p', { style: { color: 'rgba(11,27,59,.62)', marginBottom: '16px' } }, [`Step ${currentIndex + 1} of ${steps.length}`]);
+    container.appendChild(progress);
+
+    const sectionTitle = sectionForStep(step.id);
+    if (sectionTitle) container.appendChild(createEl('h3', { style: { margin: '0 0 12px' } }, [sectionTitle]));
+
+    container.appendChild(el);
+
+    const actions = createEl('div', { style: { marginTop: '24px', display: 'flex', justifyContent: 'space-between' } });
+
+    if (currentIndex > 0) {
+      const backBtn = createEl('button', { class: 'btn btn-ghost', type: 'button' }, ['Back']);
+      backBtn.addEventListener('click', () => {
+        currentIndex = prevAvailableIndex(currentIndex);
+        renderStep();
+      });
+      actions.appendChild(backBtn);
+    }
+
+    const isLast = nextAvailableIndex(currentIndex) >= steps.length;
+    const nextBtn = createEl('button', { class: 'btn btn-primary', type: 'button' }, [isLast ? 'Finish' : 'Next']);
+
+    nextBtn.addEventListener('click', () => {
+      const value = getValue();
+
+      // Validation + storage
+      if (step.id === 'domain_status') {
+        if (!value || !value.status) {
+          alert('Please provide an answer before continuing.');
+          return;
+        }
+        answers.domain_status = value.status;
+        answers[step.id] = value.status;
+        if (value.status === 'Yes') {
+          if (!value.domain) {
+            alert('Please enter your domain before continuing.');
+            return;
+          }
+          answers.domain_name = value.domain;
+        } else {
+          delete answers.domain_name;
+        }
+      } else if (step.id === 'copy_status') {
+        if (!value || !value.status) {
+          alert('Please provide an answer before continuing.');
+          return;
+        }
+        answers.copy_status = value.status;
+        answers[step.id] = value.status;
+        if (value.status === 'Yes') {
+          answers.copy_details = value.details || '';
+        } else {
+          delete answers.copy_details;
+        }
+      } else {
+        if (value === undefined || value === null || value === '' || (typeof value === 'boolean' && value === false)) {
+          alert('Please provide an answer before continuing.');
+          return;
+        }
+        answers[step.id] = value;
+      }
+
+      // If package changes away from 72-Hour Website, clear 72-hour-only answers
+      if (step.id === 'package' && answers.package !== '72-Hour Website') {
+        delete answers.pages;
+        delete answers.contact_method;
+      }
+
+      const nextIdx = nextAvailableIndex(currentIndex);
+      if (nextIdx < steps.length) {
+        currentIndex = nextIdx;
+        renderStep();
+      } else {
+        showSummary();
+      }
+    });
+
+    actions.appendChild(nextBtn);
+    container.appendChild(actions);
+  }
+
+  function compileSummary() {
+    const lines = [];
+    lines.push('CLIENT WEBSITE BRIEF — .com');
+    lines.push('');
+    lines.push(`Package: ${answers.package || ''}`);
+    lines.push('');
+    lines.push(`Business Type: ${answers.business_type || ''}`);
+    lines.push(`What does your business do?: ${answers.description || ''}`);
+    lines.push(`Who is your ideal customer?: ${answers.target_audience || ''}`);
+    lines.push('');
+    lines.push(`What should your website help you do?: ${answers.website_goal || ''}`);
+    if (answers.package === '72-Hour Website') {
+      lines.push(`Pages: ${answers.pages || ''}`);
+      lines.push(`Contact Method: ${answers.contact_method || ''}`);
+    }
+    lines.push(`Domain: ${(answers.domain_status || '')}${answers.domain_name ? ' — ' + answers.domain_name : ''}`);
+    lines.push('');
+    lines.push('Design:');
+    lines.push(`Layout Style: ${answers.layout_style || ''}`);
+    lines.push(`Brand Feel: ${answers.brand_feel || ''}`);
+    lines.push(`Color Palette: ${answers.color_palette || ''}`);
+    lines.push('');
+    lines.push('Content:');
+    lines.push(`Copy Status: ${answers.copy_status || ''}${answers.copy_details ? ' — ' + answers.copy_details : ''}`);
+    lines.push(`About Info: ${answers.about_text || ''}`);
+    lines.push('');
+    lines.push('Assets:');
+    lines.push(`Assets Ready: ${answers.assets_ready || ''}`);
+    lines.push('');
+    lines.push('Client Details:');
+    lines.push(`Name: ${answers.full_name || ''}`);
+    lines.push(`Email: ${answers.email || ''}`);
+    lines.push(`Business Name: ${answers.business_name || ''}`);
+    lines.push(`Anything else you’d like us to know?: ${answers.additional_notes || ''}`);
+    return lines.join('\n');
+  }
+
+  function showSummary() {
+    container.innerHTML = '';
+    const heading = createEl('h2', {}, ['Review Your Website Brief']);
+    const summaryText = compileSummary();
+    const pre = createEl('pre', { style: { background: 'rgba(46,201,197,.05)', padding: '16px', borderRadius: '12px', whiteSpace: 'pre-wrap', border: '1px solid var(--line)' } }, [summaryText]);
+    container.appendChild(heading);
+    container.appendChild(pre);
+
+    const form = createEl('form', { class: 'form', method: 'POST', action: '#' }, []);
+    form.appendChild(createEl('input', { type: 'hidden', name: 'website_brief', value: summaryText }));
+    form.appendChild(createEl('input', { type: 'hidden', name: 'package', value: answers.package || '' }));
+
+    const emailCard = createEl('div', { class: 'card white', style: { margin: '18px 0' } }, []);
+    emailCard.appendChild(createEl('h3', {}, ['Send your logo & photos']));
+    emailCard.appendChild(createEl('p', { style: { margin: '0 0 10px', color: '#6b7280', fontSize: '14px' } }, [
+      'After you submit this intake, email any files (logo, photos, brand colors, inspiration screenshots) to: ',
+      createEl('strong', {}, ['info@dotcom.website'])
+    ]));
+    emailCard.appendChild(createEl('a', {
+      class: 'dc-btn dc-btn-secondary',
+      href: 'mailto:info@dotcom.website?subject=DotCom%20Online%20Website%20Assets&body=Hi%20DotCom%20Online%2C%0A%0AI%20just%20submitted%20my%20intake.%20Here%20are%20my%20files%20for%20the%20website%20build.%0A%0AName%3A%20%0ABusiness%20Name%3A%20%0APackage%3A%20%0A%0AThank%20you!'
+    }, ['Email My Files →']));
+    emailCard.appendChild(createEl('p', { style: { margin: '10px 0 0', color: '#6b7280', fontSize: '13px' } }, [
+      'Tip: Attach files directly to the email (logo PNG/SVG, photos, brand kit, inspiration links).'
+    ]));
+    form.appendChild(emailCard);
+
+    form.appendChild(createEl('p', { style: { fontSize: '14px', color: '#6b7280', marginBottom: '10px' } }, [
+      'After you submit, we’ll review your details and confirm next steps.'
+    ]));
+
+    form.appendChild(createEl('button', { class: 'dc-btn dc-btn-primary', type: 'submit' }, ['Submit Intake →']));
+    container.appendChild(form);
+    container.appendChild(createEl('p', { style: { marginTop: '8px', color: 'rgba(11,27,59,.62)', fontSize: '14px' } }, ['Your responses will be sent when deployed with a form service.']));
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    renderStep();
+  });
+})();
+
+</script>
+</body>
+</html>
