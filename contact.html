@@ -180,5 +180,27 @@
 </div>
 </footer>
 <script defer="" src="assets/js/main.js"></script>
+<script>
+/* Allow real POST submission to Formspree (main.js includes a demo handler that prevents submit). */
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    // Stop other submit handlers from cancelling the request.
+    e.stopImmediatePropagation();
+  }, true);
+})();
+</script>
 </body>
+<script>
+/* Allow real POST submission to Formspree (main.js includes a demo handler that prevents submit). */
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    // Stop other submit handlers from cancelling the request.
+    e.stopImmediatePropagation();
+  }, true);
+})();
+</script>
 </body></html>
