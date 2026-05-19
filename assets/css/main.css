@@ -1,0 +1,2571 @@
+/*------------------------------------------------------------------
+
+    Main Style Stylesheet
+    Project:        Vortex. |  StartUp Landing Page Template
+    Version:        1.0
+    Author:         Gnawi Themes
+    Last change:    8/29/2016
+    Primary use:    Landing,Startup and Showcase.
+
+-------------------------------------------------------------------*/
+/*-- Imports (only visible on scss file) --*/
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,700";
+/*========================================
+          Base Style
+========================================*/
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #496174;
+  background: #fff;
+  font-size: 14px;
+  line-height: 24px; }
+
+.section-padding {
+  padding: 100px 0; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+/*-- Preloader --*/
+.page-preloader {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #44c5ee;
+  z-index: 100000; }
+
+.spinner {
+  position: relative;
+  top: 35%;
+  margin: 100px auto;
+  width: 50px;
+  height: 34px;
+  text-align: center;
+  font-size: 10px; }
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+    40%,
+    100% {
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1); } }
+@keyframes sk-stretchdelay {
+  0%,
+    40%,
+    100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1); } }
+/*========================================
+            Typography
+========================================*/
+/*-- Typo Style --*/
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 35px;
+  color: #fff; }
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 0.08em; }
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 0.08em; }
+
+h4 {
+  font-size: 24px;
+  letter-spacing: 0.08em; }
+
+h5 {
+  font-size: 18px;
+  letter-spacing: 0.08em; }
+
+h6 {
+  font-size: 16px; }
+
+p {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  line-height: 24px; }
+
+/*========================================
+            Buttons Style
+========================================*/
+.btn-blue {
+  background: #44c5ee;
+  padding: 10px 28px;
+  border: 2px solid #44c5ee;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all;
+  box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6);
+  outline: none !important; }
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  background: #fff;
+  color: #496174; }
+
+.btn-transparent {
+  background: transparent;
+  padding: 10px 28px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all;
+  outline: none !important; }
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+  background: #fff;
+  color: #496174; }
+
+.btn-white {
+  background: #fff;
+  padding: 10px 28px;
+  color: #496174;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all;
+  outline: none !important; }
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active {
+  background: transparent;
+  color: #fff; }
+
+/*-- Navbar Bug Fix --*/
+@media (max-width: 1023px) {
+  /* Navbar Responsive
+  =================================*/
+  nav.navbar.bootsnav .navbar-brand {
+    display: inline-block;
+    float: none !important;
+    margin: 0 !important;
+    padding: 3px 15px; }
+    nav.navbar.bootsnav .navbar-brand img {
+      width: 30px; }
+
+  nav.navbar.bootsnav .navbar-header {
+    float: none;
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  nav.navbar.bootsnav .navbar-toggle {
+    display: inline-block;
+    float: left;
+    margin-right: -200px;
+    margin-top: 10px; }
+
+  nav.navbar.bootsnav .navbar-collapse {
+    border: none;
+    margin-bottom: 0; }
+
+  nav.navbar.bootsnav.no-full .navbar-collapse {
+    max-height: 350px;
+    overflow-y: auto !important; }
+
+  nav.navbar.bootsnav .navbar-collapse.collapse {
+    display: none !important; }
+
+  nav.navbar.bootsnav .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  nav.navbar.bootsnav .navbar-nav {
+    float: none !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px -15px; }
+
+  nav.navbar.bootsnav .navbar-nav > li {
+    float: none; }
+
+  nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    float: right;
+    font-size: 16px;
+    margin-left: 10px; }
+
+  nav.navbar.bootsnav li.dropdown.on > a.dropdown-toggle:before {
+    content: "\f107"; }
+
+  nav.navbar.bootsnav .navbar-nav > li > a {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #e0e0e0;
+    padding: 10px 0;
+    border-top: solid 1px #e0e0e0;
+    margin-bottom: -1px; }
+
+  nav.navbar.bootsnav .navbar-nav > li:first-child > a {
+    border-top: none; }
+
+  nav.navbar.bootsnav ul.navbar-nav.navbar-left > li:last-child > ul.dropdown-menu {
+    border-bottom: solid 1px #e0e0e0; }
+
+  nav.navbar.bootsnav ul.nav li.dropdown li a.dropdown-toggle {
+    float: none !important;
+    position: relative;
+    display: block;
+    width: 100%; }
+
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu {
+    width: 100%;
+    position: relative !important;
+    background-color: transparent;
+    float: none;
+    border: none;
+    padding: 0 0 0 15px !important;
+    margin: 0 0 -1px 0 !important;
+    -o-box-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px;
+    border-radius: 0px 0px 0px; }
+
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #e0e0e0;
+    padding: 10px 0;
+    color: #6f6f6f; }
+
+  nav.navbar.bootsnav ul.nav ul.dropdown-menu li a:hover,
+  nav.navbar.bootsnav ul.nav ul.dropdown-menu li a:focus {
+    background-color: transparent; }
+
+  nav.navbar.bootsnav ul.nav ul.dropdown-menu ul.dropdown-menu {
+    float: none !important;
+    left: 0;
+    padding: 0 0 0 15px;
+    position: relative;
+    background: transparent;
+    width: 100%; }
+
+  nav.navbar.bootsnav ul.nav ul.dropdown-menu li.dropdown.on > ul.dropdown-menu {
+    display: inline-block;
+    margin-top: -10px; }
+
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:after {
+    display: none; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title {
+    padding: 10px 15px 10px 0;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    cursor: pointer;
+    border-bottom: solid 1px #e0e0e0;
+    color: #6f6f6f; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu ul > li > a {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #e0e0e0;
+    padding: 8px 0; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title:before {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    float: right;
+    font-size: 16px;
+    margin-left: 10px;
+    position: relative;
+    right: -15px; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu:last-child .title {
+    border-bottom: none; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu.on:last-child .title {
+    border-bottom: solid 1px #e0e0e0; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu:last-child ul.menu-col li:last-child a {
+    border-bottom: none; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu.on .title:before {
+    content: "\f107"; }
+
+  nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .content {
+    padding: 0 0 0 15px; }
+
+  nav.bootsnav.brand-center .navbar-collapse {
+    display: block; }
+
+  nav.bootsnav.brand-center ul.nav {
+    margin-bottom: 0px !important; }
+
+  nav.bootsnav.brand-center .navbar-collapse .col-half {
+    width: 100%;
+    float: none;
+    display: block; }
+
+  nav.bootsnav.brand-center .navbar-collapse .col-half.left {
+    margin-bottom: 0; }
+
+  nav.bootsnav .megamenu-content {
+    padding: 0; }
+
+  nav.bootsnav .megamenu-content .col-menu {
+    padding-bottom: 0; }
+
+  nav.bootsnav .megamenu-content .title {
+    cursor: pointer;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    font-weight: normal; }
+
+  nav.bootsnav .megamenu-content .content {
+    display: none; }
+
+  .attr-nav {
+    position: absolute;
+    right: 60px; }
+
+  .attr-nav > ul {
+    padding: 0;
+    margin: 0 -15px -7px 0; }
+
+  .attr-nav > ul > li > a {
+    padding: 16px 15px 15px; }
+
+  .attr-nav > ul > li.dropdown > a.dropdown-toggle:before {
+    display: none; }
+
+  .attr-nav > ul > li.dropdown ul.dropdown-menu {
+    margin-top: 2px;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px;
+    border-top: solid 5px; }
+
+  .top-search .container {
+    padding: 0 45px; } }
+@media (max-width: 992px) {
+  #home .container {
+    text-align: center; }
+    #home .container h1 {
+      font-size: 36px; }
+    #home .container h2 {
+      font-size: 26px; }
+
+  section .col-md-4 {
+    margin-bottom: 40px; }
+
+  #newsletter .form-container .form-inline .btn {
+    position: relative;
+    right: 143px; } }
+@media (max-width: 767px) {
+  #home .container {
+    text-align: center; }
+    #home .container h1 {
+      font-size: 34px; }
+    #home .container h2 {
+      font-size: 24px; }
+
+  #clients #owl-testimonials .item p {
+    width: 100%; }
+
+  #newsletter .form-container .form-inline .form-control {
+    width: 80%; }
+  #newsletter .form-container .form-inline .btn {
+    position: relative;
+    right: 40px;
+    margin-top: 40px; }
+
+  #contact .contact-info {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 40px; } }
+/*========================================
+           Header
+========================================*/
+nav.navbar.bootsnav.navbar-fixed .navbar-brand {
+  padding: 10px 15px; }
+nav.navbar.bootsnav.navbar-fixed ul.nav > li > a {
+  padding: 35px 15px; }
+nav.navbar.bootsnav.navbar-fixed .button-holder {
+  padding: 15px 0;
+  margin-left: 40px; }
+
+#home {
+  position: relative;
+  padding: 190px 0px 120px 0px;
+  background: url(../img/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #home .caption {
+    padding: 60px 0; }
+    #home .caption h2 {
+      color: #fff; }
+    #home .caption p {
+      font-size: 18px;
+      margin-top: 25px;
+      color: #fff; }
+    #home .caption .btn {
+      margin-top: 25px; }
+    #home .caption .btn-blue {
+      margin-left: 15px; }
+      #home .caption .btn-blue i {
+        position: relative;
+        top: 5px;
+        margin-right: 10px; }
+  #home .signup-form {
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 45px;
+    border-radius: 5px; }
+    #home .signup-form input {
+      border: 1px solid #eee;
+      height: 38px;
+      box-shadow: none !important; }
+    #home .signup-form input:focus {
+      border-color: #44c5ee; }
+    #home .signup-form .form-control {
+      font-size: 16px;
+      padding: 10px 15px;
+      color: #555;
+      background-color: rgba(255, 255, 255, 0.86);
+      border-radius: 3px; }
+
+/* Hero overlay for improved text contrast */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 167, 216, 0.50);
+  z-index: 1;
+}
+
+/* Ensure hero content sits above overlay */
+#home > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Allow background image to show through the hero form */
+#home .signup-form,
+#home .signup-form .form-control {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+
+
+/* Align hero button when hero copy is centered */
+#home .caption.text-center .btn-blue {
+  margin-left: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  z-index: 0; }
+
+/*========================================
+           About Us
+========================================*/
+#about {
+  text-align: center; }
+  #about .icon-box {
+    margin-top: 60px; }
+    #about .icon-box i {
+      font-size: 46px;
+      color: #f23c7e; }
+    #about .icon-box h4 {
+      margin: 25px 0; }
+
+/*========================================
+           Story
+========================================*/
+#story {
+  background: #44c5ee; }
+  #story .col-md-6 {
+    padding: 0; }
+  #story .story-bg {
+    background-image: url(../img/how-it-works.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 480px;
+}
+  #story .story-content {
+    padding: 40px;
+    color: #fff; }
+    #story .story-content .story-quote {
+      font-size: 24px;
+      margin: 35px 0;
+      font-style: italic; }
+    #story .story-content .btn {
+      margin-top: 35px; }
+
+/*========================================
+           Services
+========================================*/
+#services {
+  text-align: center; }
+  #services .icon-box {
+    margin-top: 60px; }
+    #services .icon-box i {
+      font-size: 46px;
+      color: #f23c7e; }
+    #services .icon-box h4 {
+      margin: 25px 0; }
+
+/*========================================
+           Features
+========================================*/
+#features {
+  background: #44c5ee;
+  color: #fff;
+  padding: 80px 0; }
+  #features .media {
+    margin: 35px 0; }
+    #features .media i {
+      color: #fff;
+      font-size: 46px;
+      margin-right: 25px; }
+  #features img {
+    margin-top: 80px; }
+
+/*========================================
+           Pricing
+========================================*/
+#price {
+  text-align: center; }
+  #price .plan {
+    background: #fff;
+    box-shadow: 0px 0px 60px 0px rgba(213, 216, 224, 0.7); }
+  #price .active {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background-color: #fff;
+    box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6); }
+  #price .pricing-container {
+    margin-top: 80px; }
+    #price .pricing-container h2 {
+      color: #496174;
+      margin-bottom: 40px; }
+    #price .pricing-container h3 {
+      font-size: 24px;
+      color: #f23c7e;
+      margin-bottom: 0; }
+    #price .pricing-container h2,
+    #price .pricing-container h3 {
+      text-transform: none; }
+    #price .pricing-container .pricing-header {
+      padding: 30px 0; }
+      #price .pricing-container .pricing-header .currency {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        color: #496174;
+        top: -20px; }
+      #price .pricing-container .pricing-header .amount {
+        color: #496174;
+        font-size: 44px;
+        font-weight: 700; }
+      #price .pricing-container .pricing-header .period {
+        font-size: 22px;
+        font-weight: 300;
+        color: #496174;
+        position: relative;
+        top: 12px; }
+    #price .pricing-container ul {
+      padding: 20px 0; }
+      #price .pricing-container ul li {
+        font-size: 15px;
+        letter-spacing: .1em;
+        margin: 15px 0; }
+        #price .pricing-container ul li i {
+          color: #f23c7e;
+          margin-right: 10px; }
+    #price .pricing-container .pricing-footer {
+      padding: 25px 0; }
+
+/*========================================
+           Team
+========================================*/
+#team {
+  text-align: center; }
+  #team .team-member {
+    background: #fff;
+    box-shadow: 0px 0px 60px 0px rgba(213, 216, 224, 0.7);
+    border: 0;
+    margin-top: 80px;
+    padding: 20px; }
+    #team .team-member h6 {
+      font-style: italic; }
+    #team .team-member .team-social ul {
+      padding: 0;
+      margin: 0; }
+    #team .team-member .team-social li {
+      display: inline-block; }
+      #team .team-member .team-social li a {
+        font-size: 20px;
+        padding: 12px;
+        color: #44c5ee;
+        -webkit-transition: 0.4s;
+                transition: 0.4s; }
+      #team .team-member .team-social li a:hover,
+      #team .team-member .team-social li a:focus,
+      #team .team-member .team-social li a:active {
+        color: #496174; }
+
+/*========================================
+           Clients
+========================================*/
+#clients {
+  text-align: center; }
+  #clients #owl-clients {
+    margin: 60px 0; }
+    #clients #owl-clients .owl-pagination {
+      display: none; }
+  #clients #owl-testimonials {
+    margin: 60px 0; }
+    #clients #owl-testimonials .owl-pagination .owl-page.active span {
+      background: #f23c7e; }
+    #clients #owl-testimonials .owl-pagination .owl-page span {
+      border: 2px solid #f23c7e;
+      border-radius: 50%;
+      background: transparent;
+      opacity: 1;
+      -webkit-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
+    #clients #owl-testimonials i {
+      font-size: 48px;
+      color: #f23c7e; }
+    #clients #owl-testimonials p {
+      width: 50%;
+      margin: 25px auto; }
+    #clients #owl-testimonials h3 {
+      color: #fff; }
+
+/*========================================
+           NewsLetter
+========================================*/
+#newsletter {
+  background: #44c5ee;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff; }
+  #newsletter .form-container {
+    margin-top: 40px; }
+    #newsletter .form-container .form-inline {
+      left: 50px;
+      position: relative; }
+    #newsletter .form-container .form-control::-webkit-input-placeholder {
+      color: #fff; }
+    #newsletter .form-container .form-control:-moz-placeholder {
+      color: #fff; }
+    #newsletter .form-container .form-control::-moz-placeholder {
+      color: #fff; }
+    #newsletter .form-container .form-control:-ms-input-placeholder {
+      color: #fff; }
+    #newsletter .form-container .form-control {
+      width: 50%;
+      height: 50px;
+      border-radius: 50px;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff; }
+    #newsletter .form-container .btn {
+      position: relative;
+      right: 143px; }
+
+/*========================================
+           Contact
+========================================*/
+#contact {
+  text-align: center; }
+  #contact .contact-info {
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    background: #44c5ee;
+    box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6);
+    padding: 30px;
+    color: #fff; }
+    #contact .contact-info i {
+      font-size: 46px; }
+  #contact #map {
+    width: 100%;
+    height: 500px; }
+  #contact .contact-forms {
+    padding: 80px 0; }
+    #contact .contact-forms h2 {
+      margin-bottom: 40px; }
+    #contact .contact-forms input:focus {
+      border-color: #44c5ee; }
+    #contact .contact-forms .form-control {
+      font-size: 16px;
+      padding: 20px 15px;
+      color: #555;
+      background-color: #fff;
+      border-radius: 3px;
+      border: 2px solid #999;
+      height: 38px;
+      box-shadow: none !important;
+      margin: 30px 0; }
+    #contact .contact-forms textarea {
+      height: 118px !important;
+      resize: none;
+      margin: 0; }
+
+/*========================================
+           Footer
+========================================*/
+footer {
+  background: #44c5ee;
+  color: #fff;
+  padding: 40px 0; }
+  footer hr {
+    margin: 40px 0; }
+  footer img {
+    width: 50px; }
+  footer ul {
+    padding: 0; }
+  footer li {
+    display: inline-block; }
+    footer li a {
+      font-size: 20px;
+      padding: 12px;
+      color: #fff;
+      -webkit-transition: 0.4s;
+              transition: 0.4s; }
+    footer li a:hover,
+    footer li a:focus,
+    footer li a:active {
+      color: #496174; }
+
+
+/*========================================
+   Custom edits: April 2026 updates
+   (Newsletter copy, Story panel values, Single designer card, Header CTA sizing)
+========================================*/
+
+/* Newsletter: center copy without form elements */
+#newsletter .newsletter-copy {
+  max-width: 760px;
+  margin: 0 auto;
+}
+#newsletter .newsletter-copy h2 {
+  margin: 0 0 15px;
+  color: #fff;
+}
+#newsletter .newsletter-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+#newsletter .newsletter-copy .newsletter-subtext {
+  margin-bottom: 10px;
+}
+
+/* Story panel: stacked value items + CTA button */
+#story .story-values {
+  margin: 0;
+}
+#story .story-value-item {
+  margin-bottom: 22px;
+}
+#story .story-value-item h4 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 600;
+}
+#story .story-value-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+}
+#story .story-content .btn {
+  margin-top: 10px;
+}
+
+/* Team: single full-width horizontal card */
+#team .team-member--single {
+  width: 100%;
+}
+#team .team-member--single .team-member__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: flex-start;
+  gap: 30px;
+}
+#team .team-member--single {
+  text-align: left;
+}
+#team .team-member--single img {
+  width: 180px;
+  max-width: 180px;
+  margin: 0;
+}
+#team .team-member--single .caption {
+  padding: 0;
+}
+#team .team-member--single h4 {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  #team .team-member--single .team-member__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+  #team .team-member--single img {
+    width: 160px;
+    max-width: 160px;
+  }
+  #team .team-member--single {
+    text-align: center;
+  }
+}
+
+/* Contact form spacing: remove extra top padding since intro/value block moved */
+#contact .contact-forms {
+  padding-top: 0;
+}
+
+/* Header CTA button: match nav link size/scale (subtle distinction only) */
+nav.navbar.bootsnav.navbar-fixed .button-holder {
+  padding: 0;
+  margin-left: 0;
+}
+nav.navbar.bootsnav ul.nav > li.button-holder > a.navbar-btn.btn-blue {
+  padding: 35px 15px;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid #44c5ee;
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: none;
+  font-weight: inherit;
+  letter-spacing: normal;
+}
+nav.navbar.bootsnav ul.nav > li.button-holder > a.navbar-btn.btn-blue:hover,
+nav.navbar.bootsnav ul.nav > li.button-holder > a.navbar-btn.btn-blue:focus,
+nav.navbar.bootsnav ul.nav > li.button-holder > a.navbar-btn.btn-blue:active {
+  background: rgba(68, 197, 238, 0.15);
+  color: inherit;
+}
+
+/* Mobile nav: keep CTA from looking oversized or wrapping */
+@media (max-width: 991px) {
+  nav.navbar.bootsnav ul.nav > li.button-holder > a.navbar-btn.btn-blue {
+    padding: 10px 15px;
+  }
+  #features .how-it-works-visual{
+    transform: scale(1.25) translateY(-14%);
+  }
+}
+
+/* ==========================================================
+   Requested edits (CTA / Forms / Header / Story value panel)
+   ========================================================== */
+
+/* Header logo: ~2x larger without increasing header height */
+nav.navbar.bootsnav .navbar-brand img {
+  width: auto;
+  height: 34px;
+}
+
+/* Header nav CTA: match nav link size; subtle pill outline */
+nav.navbar.bootsnav.navbar-fixed .button-holder {
+  padding: 0;
+  margin-left: 15px;
+}
+nav.navbar.bootsnav ul.nav > li.button-holder > a.nav-cta {
+  background: transparent !important;
+  padding: 30px 15px;
+  border: 0;
+}
+nav.navbar.bootsnav ul.nav > li.button-holder > a.nav-cta .nav-cta-text {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #44c5ee;
+  border-radius: 50px;
+  line-height: 1.2;
+}
+nav.navbar.bootsnav ul.nav > li.button-holder > a.nav-cta:hover .nav-cta-text,
+nav.navbar.bootsnav ul.nav > li.button-holder > a.nav-cta:focus .nav-cta-text {
+  background: rgba(68, 197, 238, 0.15);
+}
+
+@media (max-width: 991px) {
+  nav.navbar.bootsnav ul.nav > li.button-holder > a.nav-cta {
+    padding: 10px 0;
+  }
+}
+
+/* Hero: remove leftover spacing when only one button remains */
+#home .caption .btn-blue {
+  margin-left: 0;
+}
+
+/* Blue CTA (newsletter): keep centered copy */
+#newsletter .newsletter-copy {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Contact section: move form closer to blue CTA while keeping breathing room */
+#contact.section-padding {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+#contact .contact-forms {
+  padding: 0;
+}
+
+/* Shared form cleanup (both forms) */
+.dotcom-form .form-control {
+  font-size: 16px;
+  padding: 12px 15px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #999;
+  box-shadow: none !important;
+}
+.dotcom-form input.form-control,
+.dotcom-form select.form-control {
+  height: 42px;
+}
+
+/* Ensure select text isn't clipped (cross-browser) */
+.dotcom-form select.form-control {
+  padding: 0 40px 0 15px;
+  line-height: 42px;
+}
+.dotcom-form textarea.form-control {
+  height: auto !important;
+  min-height: 180px;
+  resize: none;
+}
+.dotcom-form .form-group {
+  margin-bottom: 12px;
+}
+.dotcom-form .contact-form-actions {
+  margin-top: 10px;
+}
+/* Contact form: give textarea a little more height for balance */
+#contact .dotcom-form textarea.form-control {
+  min-height: 240px;
+}
+
+/* Hero form: keep textarea from becoming overly tall */
+#home .dotcom-form textarea.form-control {
+  min-height: 160px;
+}
+
+/* Story panel: 3 value blocks with icons, centered like the white value section */
+#story .story-values-row {
+  margin-top: 10px;
+}
+#story .story-value-box {
+  text-align: center;
+  margin: 18px 0;
+}
+#story .story-value-box i {
+  display: block;
+  font-size: 46px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+#story .story-value-box h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#story .story-value-box p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+#story .story-content .btn {
+  margin-top: 0;
+}
+#story .story-cta-wrap {
+  margin-top: 22px;
+}
+/* Contact form: override legacy contact control margins */
+#contact .dotcom-form .form-control {
+  margin: 0;
+  border: 1px solid #999;
+  padding: 12px 15px;
+}
+
+
+/*========================================
+   Custom edits: April 2026 - v4 tweaks
+   (Header alignment, dropdown selects, footer policies, team blue background)
+========================================*/
+
+/* Header: align logo vertically with nav items (desktop) without increasing header height */
+@media (min-width: 992px) {
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+}
+
+/* Forms: ensure select text is not clipped (match input height/padding) */
+#contact .dotcom-form .form-control,
+#home .dotcom-form .form-control {
+  height: 46px;
+  padding: 10px 15px;
+  line-height: 1.2;
+}
+#contact .dotcom-form select.form-control,
+#home .dotcom-form select.form-control {
+  padding: 0 40px 0 15px; /* vertical centering + room for arrow */
+  line-height: 46px;
+}
+#contact .dotcom-form textarea.form-control,
+#home .dotcom-form textarea.form-control {
+  height: auto; /* respect rows */
+  line-height: 1.4;
+}
+
+/* Footer: remove social icons (replaced by Policies link), tighten spacing, scale logo */
+footer {
+  padding: 26px 0;
+}
+footer hr {
+  margin: 18px 0;
+}
+footer .footer-logo {
+  height: 62px;
+  width: auto;
+  max-width: 100%;
+}
+footer .footer-brand {
+  margin: 8px 0 2px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+footer .footer-tagline {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  opacity: 0.65;
+  text-align: center;
+}
+footer .footer-policies {
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 0;
+}
+footer .footer-policies:hover,
+footer .footer-policies:focus,
+footer .footer-policies:active {
+  color: #496174;
+  text-decoration: none;
+}
+
+/* Meet the designer: add blue background behind heading + card */
+#team.team-blue {
+  background: #44c5ee;
+}
+#team.team-blue h2 {
+  color: #fff;
+}
+
+
+/* Button subtext: keep readable but smaller than body text */
+.button-subtext{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+
+
+
+.form-note {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #aaa;
+  margin-top: 8px;
+}
+/* Pricing: vertically center card content for balanced layout */
+@media (min-width: 992px) {
+  #price .pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  #price .pricing-container > .col-md-4 {
+    float: none;
+    display: flex;
+  }
+  #price .pricing-container > .col-md-4 .plan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #price .pricing-container > .col-md-4 .pricing-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Monthly Plans: remove big header price; improve tier readability */
+#price .monthly-tiers {
+  text-align: left;
+  padding: 10px 22px 20px;
+}
+#price .monthly-tier-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #496174;
+  padding: 8px 0;
+}
+#price .monthly-tier-features li {
+  letter-spacing: 0.06em;
+  margin: 12px 0;
+}
+#price .monthly-tier--spaced {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(73, 97, 116, 0.15);
+}
+
+
+/* Meet the designer (blue section): remove white card and ensure text contrast */
+#team.team-blue .team-member.team-member--single {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+#team.team-blue .team-member.team-member--single .caption h4,
+#team.team-blue .team-member.team-member--single .caption h6,
+#team.team-blue .team-member.team-member--single .caption p {
+  color: rgba(255, 255, 255, 0.92);
+}
+#team.team-blue .team-member.team-member--single .caption h6 {
+  opacity: 0.9;
+}
+
+
+/* === Overrides: story panel vertical centering + new images (v6) === */
+#story .story-bg {
+  background-color: #44c5ee; /* ensure full section stays blue behind image */
+}
+@media (min-width: 992px) {
+  #story .story-bg + .col-md-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+    min-height: 480px; /* match left image height */
+  }
+  #story .story-bg + .col-md-6 .story-content {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  #story .story-bg + .col-md-6 {
+    display: block;
+    min-height: 0;
+  }
+}
+
+
+
+/*========================================
+   Custom edits: April 2026 - v8 tweaks
+   (Hero overlay gradient, form transparency, header logo alignment,
+    icon + pricing header colors, footer logo scaling, select clipping)
+========================================*/
+
+:root{
+  --dotcom-navy: #0b2a4a;
+}
+
+/* Hero overlay: gradient from blue into navy for better contrast */
+#home::before{
+  background: linear-gradient(135deg, rgba(0, 167, 216, 0.55) 0%, rgba(11, 42, 74, 0.72) 100%);
+}
+
+/* Hero form: more transparency so background tiles show through */
+#home .signup-form,
+#home .signup-form .form-control{
+  background-color: rgba(255, 255, 255, 0.58);
+}
+
+/* Fix select placeholder/value clipping in both forms */
+#contact .dotcom-form select.form-control,
+#home .dotcom-form select.form-control{
+  height: 50px;
+  padding: 12px 42px 12px 15px;
+  line-height: 1.35;
+}
+
+/* Header: ensure logo sits perfectly inline with nav items (desktop) */
+@media (min-width: 992px){
+  nav.navbar.bootsnav .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+  }
+  nav.navbar.bootsnav .navbar-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+    float: none;
+  }
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand{
+    padding: 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+    line-height: 1;
+  }
+  nav.navbar.bootsnav.navbar-fixed .navbar-collapse{
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.navbar-nav{
+    float: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.navbar-nav > li > a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.navbar-nav > li.button-holder{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-start;
+  }
+}
+
+/* Icons: navy across the page */
+i.material-icons,
+.material-icons{
+  color: var(--dotcom-navy) !important;
+}
+
+/* Subscription/pricing card headers: navy */
+#price .pricing-header h3:first-child{
+  color: var(--dotcom-navy);
+}
+#price .monthly-tier-title{
+  color: var(--dotcom-navy);
+}
+
+/* Footer logo: reduce by 50% from current */
+footer .footer-logo{
+  height: 31px;
+}
+
+
+/*========================================
+   Custom edits: April 2026 - v9 tweaks
+   (Designer photo, form checkboxes, one-column contact form,
+    updated pricing/care plans, how-it-works image sizing, footer alignment)
+========================================*/
+
+/* Meet the designer: use uploaded photo with centered face in circle */
+#team .team-member--single img {
+  width: 220px;
+  height: 220px;
+  max-width: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+@media (max-width: 767px) {
+  #team .team-member--single img {
+    width: 180px;
+    height: 180px;
+    max-width: 180px;
+  }
+}
+
+/* Hero and contact forms: support additional services checkboxes */
+.additional-services-group {
+  text-align: left;
+}
+.additional-services-group .services-label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #496174;
+}
+.additional-services-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+.additional-services-options .checkbox-inline {
+  margin: 0;
+  padding-left: 24px;
+  font-size: 14px;
+  color: #496174;
+}
+.additional-services-options .checkbox-inline + .checkbox-inline {
+  margin-left: 0;
+}
+.additional-services-options input[type="checkbox"] {
+  margin-top: 2px;
+}
+#home .additional-services-group .services-label,
+#home .additional-services-options .checkbox-inline {
+  color: rgba(73, 97, 116, 0.98);
+}
+
+/* Add-ons multi-select dropdown (replaces inline checkboxes) */
+.addons-group{
+  text-align: left;
+}
+.addons-multiselect{
+  position: relative;
+}
+.addons-toggle{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.addons-toggle::after{
+  content: "▾";
+  font-size: 12px;
+  opacity: 0.75;
+  margin-left: 10px;
+}
+.addons-menu{
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid rgba(73, 97, 116, 0.22);
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.12);
+  display: none;
+  max-height: 260px;
+  overflow: auto;
+  z-index: 999;
+}
+.addons-multiselect.is-open .addons-menu{
+  display: block;
+}
+.addons-menu .checkbox-inline{
+  /* Override Bootstrap inline checkbox positioning for clean alignment */
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+  padding-left: 0;
+  line-height: 1.4;
+}
+.addons-menu .checkbox-inline input[type="checkbox"]{
+  position: static;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 767px){
+  .addons-menu{
+    max-height: 50vh;
+  }
+}
+
+/* Contact form under newsletter: one-column layout with textarea at bottom */
+#contact .contact-form {
+  max-width: 760px;
+  margin: 0 auto;
+}
+#contact .contact-form-stack {
+  width: 100%;
+}
+#contact .contact-form-stack .form-control {
+  width: 100%;
+}
+#contact .contact-form-stack textarea.form-control {
+  min-height: 180px;
+}
+
+/* How it works section: larger visual, almost fills its column and centered vertically */
+@media (min-width: 992px) {
+  #features .row {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+#features .how-it-works-image-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+#features .how-it-works-visual {
+  /* The source image has a lot of transparent padding — scale/shift so tiles read larger */
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  transform: scale(1.75) translateY(-18%);
+  transform-origin: center;
+}
+#features img {
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  #features .row {
+    display: block;
+  }
+  #features .how-it-works-image-col {
+    margin-top: 35px;
+  }
+}
+
+/* Pricing card copy refinement */
+#price .pricing-body p {
+  line-height: 1.55;
+}
+#price .monthly-tier-title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+#price .monthly-tier-features {
+  padding: 10px 0 0;
+  margin: 0;
+}
+#price .monthly-tier-features li {
+  letter-spacing: normal;
+  line-height: 1.55;
+  margin: 10px 0;
+}
+#price .monthly-tier-note {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6c7a86;
+  margin: 12px 0 0;
+}
+#price .active .monthly-tier-note,
+#price .active .pricing-body p {
+  color: rgba(255,255,255,0.92);
+}
+.pricing-note {
+  font-size: 1rem;
+  color: #888;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pricing-note-primary {
+  margin-bottom: 16px;
+}
+.pricing-note-secondary {
+  margin-bottom: 0;
+}
+
+/* Footer stack aligned centrally */
+footer .footer-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+footer .footer-meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+footer .footer-meta h5 {
+  margin: 0;
+}
+footer .footer-policies {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  footer .footer-meta {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/*========================================
+   Pricing Deck Stacks (v10)
+   (Landing Page / Subscription section only)
+========================================*/
+#price .pricing-container.pricing-deck-container{
+  margin-top: 80px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* Keep the three stacks aligned in one row on desktop without overlap */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 56px;
+  row-gap: 72px;
+  align-items: start;
+  justify-items: center;
+}
+#price .pricing-container.pricing-deck-container > .col-md-4{
+  float: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 320px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  #price .pricing-container.pricing-deck-container{
+    column-gap: 44px;
+  }
+  #price .pricing-container.pricing-deck-container > .col-md-4{
+    max-width: 296px;
+  }
+  #price .deck-stack{
+    max-width: 296px;
+  }
+}
+@media (max-width: 991px){
+  #price .pricing-container.pricing-deck-container{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 48px;
+  }
+  #price .pricing-container.pricing-deck-container > .col-md-4{
+    max-width: 440px;
+  }
+  #price .deck-stack{
+    max-width: 440px;
+  }
+}
+#price .pricing-container h3.deck-group-title{
+  margin: 0 0 44px;
+  text-transform: none;
+  text-align: center;
+}
+
+/* Deck container */
+#price .deck-stack{
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  cursor: pointer;
+  isolation: isolate;
+  z-index: 1;
+
+  --deck-x: 7px;
+  --deck-y: 7px;
+  --deck-rot: 0.5deg;
+  --deck-duration: 520ms;
+}
+@media (max-width: 991px){
+  #price .deck-stack{
+    max-width: 440px;
+  }
+}
+
+/* Stack hover tilt: rotate the whole category deck slightly on hover */
+#price .deck-stack:hover,
+#price .deck-stack:focus{
+  --hover-tilt: 1.2deg;
+}
+
+#price .deck-stack:hover,
+#price .deck-stack.is-animating{
+  z-index: 6;
+}
+@media (max-width: 767px){
+  #price .deck-stack{
+    max-width: 440px;
+    --deck-x: 6px;
+    --deck-y: 6px;
+    --deck-rot: 0.4deg;
+  }
+}
+
+/* No-JS / pre-init fallback: cards display normally */
+#price .deck-card{
+  position: relative;
+  margin-bottom: 18px;
+}
+#price .deck-stack--ready .deck-card{
+  margin-bottom: 0;
+}
+
+/* Decorative layers for stacks with 2 cards (keeps 3–6 visible layers) */
+#price .deck-stack--decor::before,
+#price .deck-stack--decor::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 60px 0px rgba(213, 216, 224, 0.45);
+  pointer-events: none;
+  opacity: 0.55;
+  z-index: 0;
+}
+#price .deck-stack--decor::before{
+  transform: translate(calc(var(--deck-x) * 3), calc(var(--deck-y) * 3)) rotate(calc(var(--deck-rot) * 3));
+}
+#price .deck-stack--decor::after{
+  transform: translate(calc(var(--deck-x) * 4), calc(var(--deck-y) * 4)) rotate(calc(var(--deck-rot) * 4));
+  opacity: 0.45;
+}
+
+/* Deck cards (active/ready state) */
+#price .deck-stack--ready .deck-card{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* transform is driven by JS via --pos, with optional cycle bump */
+  transform: translate(
+      calc(var(--pos) * var(--deck-x) + var(--bump-x, 0px)),
+      calc(var(--pos) * var(--deck-y) + var(--bump-y, 0px))
+    )
+    rotate(calc(var(--pos) * var(--deck-rot) + var(--cycle-rot, 0deg) + var(--hover-tilt, 0deg)));
+  transition: transform var(--deck-duration) ease, opacity var(--deck-duration) ease, box-shadow var(--deck-duration) ease;
+  will-change: transform;
+
+  /* Only the front card should be interactive */
+  pointer-events: none;
+  z-index: 1;
+}
+#price .deck-stack--ready .deck-card.is-front{
+  pointer-events: auto;
+  box-shadow: 0px 18px 60px 0px rgba(68, 197, 238, 0.18), 0px 0px 60px 0px rgba(213, 216, 224, 0.55);
+}
+#price .deck-stack--ready .deck-card.deck-card--hidden{
+  opacity: 0;
+}
+
+/* Card copy helpers */
+#price .pricing-card-desc{
+  font-size: 0.9rem;
+  color: #777;
+  padding: 0 16px 12px;
+  margin: 0;
+}
+#price .deck-line{
+  font-size: 15px;
+  line-height: 1.55;
+  color: #496174;
+  padding: 0 18px 12px;
+  margin: 0;
+}
+#price .deck-card--compact .pricing-header{
+  padding: 24px 10px 16px;
+}
+#price .deck-card--compact .pricing-body{
+  padding-bottom: 18px;
+}
+#price .deck-note{
+  margin: 12px 18px 0;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #6c7a86;
+  background: rgba(73, 97, 116, 0.06);
+  border-left: 3px solid rgba(68, 197, 238, 0.55);
+}
+#price .deck-card--text-left .pricing-body{
+  text-align: left;
+  padding: 0 22px 22px;
+}
+#price .deck-card--text-left ul{
+  padding: 10px 0 0;
+}
+#price .deck-card--text-left ul li{
+  letter-spacing: normal;
+}
+#price .deck-quote{
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6c7a86;
+}
+
+
+/* Footer link separator */
+footer .footer-link-sep{display:inline-block;margin:0 10px;color:rgba(0,0,0,0.35);}
+footer .footer-faqs{margin-left:0;}
+
+/* Policy / FAQ pages */
+.policy-block, .faq-block{
+  margin: 26px 0;
+}
+.policy-block h3, .faq-block h3{
+  margin-top: 0;
+}
+.policy-block h4{
+  margin-top: 18px;
+}
+.policy-block ul, .faq-block ul{
+  margin: 10px 0 0 18px;
+}
+
+
+/*========================================
+   Custom edits: v16 polish
+   - hero button subtext alignment
+   - how it works image visibility
+   - client review logos + testimonial updates
+========================================*/
+.button-subtext,
+.form-note {
+  font-size: 14px;
+  line-height: 1.55;
+}
+#home .button-subtext {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 420px;
+}
+
+#features .how-it-works-image-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 390px;
+  overflow: visible;
+}
+#features .how-it-works-visual,
+#features .how-it-works-image-col img.img-responsive {
+  display: block;
+  width: 96%;
+  max-width: 620px;
+  height: auto;
+  max-height: 360px;
+  margin: 0 auto;
+  object-fit: contain;
+  transform: none;
+  transform-origin: center;
+}
+@media (max-width: 991px) {
+  #features .how-it-works-image-col {
+    min-height: 0;
+    margin-top: 35px;
+  }
+  #features .how-it-works-visual,
+  #features .how-it-works-image-col img.img-responsive {
+    width: 100%;
+    max-width: 560px;
+    max-height: none;
+  }
+}
+
+#clients p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#clients .clients-images {
+  margin-top: 15px;
+}
+#clients #owl-clients {
+  margin: 50px 0 30px;
+}
+#clients #owl-clients .item {
+  height: 110px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 16px;
+}
+#clients #owl-clients img {
+  width: auto;
+  max-width: 100%;
+  max-height: 68px;
+  display: block;
+}
+#clients #owl-testimonials {
+  margin: 30px 0 0;
+}
+#clients #owl-testimonials .item {
+  padding: 10px 15px 5px;
+}
+#clients #owl-testimonials i {
+  font-size: 44px;
+  color: #496174;
+}
+#clients .testimonial-company-logo {
+  display: block;
+  max-height: 52px;
+  width: auto;
+  margin: 18px auto 16px;
+}
+#clients #owl-testimonials p.quote {
+  width: 100%;
+  max-width: 860px;
+  margin: 18px auto 16px;
+  font-size: 22px;
+  line-height: 1.65;
+  color: #496174;
+}
+#clients #owl-testimonials h4 {
+  margin: 0;
+  color: #496174;
+  font-size: 24px;
+  font-weight: 600;
+}
+#clients .testimonial-company {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #6c7a86;
+}
+@media (max-width: 767px) {
+  #clients #owl-clients .item {
+    height: 92px;
+  }
+  #clients #owl-clients img {
+    max-height: 54px;
+  }
+  #clients .testimonial-company-logo {
+    max-height: 44px;
+  }
+  #clients #owl-testimonials p.quote {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  #home .button-subtext {
+    max-width: none;
+  }
+}
+
+
+/*========================================
+   Custom edits: v17 tweaks
+   1) Reduce hero/button subtext by 25%
+   2) Center + enlarge How it works image
+   3) Footer FAQ link color
+========================================*/
+.button-subtext{
+  font-size: 10.5px; /* 25% smaller than 14px */
+  line-height: 1.55;
+}
+
+#features .how-it-works-image-col{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#features .how-it-works-visual,
+#features .how-it-works-image-col img.img-responsive{
+  width: 100%;
+  max-width: 775px; /* +25% from prior 620px */
+  max-height: 450px; /* +25% from prior 360px */
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  transform: none;
+}
+
+@media (max-width: 991px){
+  #features .how-it-works-visual,
+  #features .how-it-works-image-col img.img-responsive{
+    width: 100%;
+    max-width: 700px;
+    max-height: none;
+    transform: none;
+  }
+}
+
+footer .footer-faqs{
+  color: #fff;
+}
+
+
+/*========================================
+   Custom edits: v18 fixes
+   1) Home nav link works from Policies/FAQ pages
+   2) Center + enlarge How it works image (no cut-off)
+   3) Remove any remaining client logo ticker styling impact
+   4) Reduce hero See Plans subtext by 50%
+   5) Make testimonial pagination dots navy
+========================================*/
+
+/* 4) Hero CTA subtext smaller (50% reduction from 14px) */
+#home .button-subtext{
+  font-size: 7px;
+  line-height: 1.4;
+}
+
+/* 2) How it works image centered and scaled up */
+#features .how-it-works-image-col{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+#features .how-it-works-visual,
+#features .how-it-works-image-col img.img-responsive{
+  display: block;
+  width: auto;
+  max-width: 970px; /* slightly larger than panel content */
+  max-height: 520px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  transform: scale(1.25);
+  transform-origin: center;
+}
+@media (max-width: 991px){
+  #features .how-it-works-visual,
+  #features .how-it-works-image-col img.img-responsive{
+    max-width: 100%;
+    max-height: none;
+    transform: none;
+  }
+}
+
+/* 5) Testimonial pagination dots/nav buttons navy */
+#clients #owl-testimonials .owl-pagination .owl-page.active span{
+  background: #496174;
+}
+#clients #owl-testimonials .owl-pagination .owl-page span{
+  border-color: #496174;
+}
+
+/* Ensure footer FAQ link stays white */
+footer .footer-faqs{
+  color: #fff !important;
+}
+
+
+/*========================================
+   v19 tweaks
+   - policies/faqs Home link color
+   - hero button subtext true size reduction
+   - how-it-works image shift right for spacing
+========================================*/
+
+/* Policies / FAQ pages: Home link back to brand blue */
+.legal-nav-home{
+  color: #44c5ee !important;
+}
+
+/* Hero button subtext: force smaller sizing (overrides #home .caption p rule) */
+#home .caption p.button-subtext{
+  font-size: 9px !important; /* 50% of 18px body copy in hero */
+  line-height: 1.5 !important;
+}
+
+/* How it works: push visual slightly right to give more breathing room from text */
+@media (min-width: 992px){
+  #features .how-it-works-image-col{
+    justify-content: flex-end;
+    padding-left: 60px; /* creates space from left text column */
+  }
+  #features .how-it-works-visual{
+    width: 92%;
+    max-width: 720px;
+    max-height: 420px;
+    margin-left: auto;
+    margin-right: 0;
+    transform: scale(1.25);
+    transform-origin: center right;
+  }
+}
+@media (max-width: 991px){
+  #features .how-it-works-image-col{
+    justify-content: center;
+    padding-left: 0;
+  }
+  #features .how-it-works-visual{
+    width: 100%;
+    max-width: 560px;
+    max-height: none;
+    margin: 0 auto;
+    transform: none;
+  }
+}
+
+/*========================================
+   v20 tweaks
+   - Start My Page subtext (form-note) set to 9px + navy
+   - How it works image centered in right panel with proper spacing
+========================================*/
+
+/* Start My Page subtext: both hero form + contact form */
+#home .contact-form-actions .form-note,
+#contact .contact-form-actions .form-note{
+  font-size: 9px !important;
+  line-height: 1.4 !important;
+  color: #1b395f !important; /* navy */
+}
+
+/* How it works: keep two-column layout, add breathing room, center the visual */
+@media (min-width: 992px){
+  #features .row{
+    display: flex;
+    align-items: flex-start;
+  }
+  #features .row > .col-md-6:first-child{
+    padding-right: 80px; /* increases space between text and image */
+  }
+  #features .how-it-works-image-col{
+    justify-content: center !important;
+    padding-left: 0 !important;
+  }
+  #features .how-it-works-visual{
+    width: 92%;
+    max-width: 720px;
+    max-height: 420px;
+    margin: 0 auto !important;
+    transform: scale(1.25);
+    transform-origin: center;
+  }
+}
+
+
+
+/*========================================
+  Offer Modal Popup (v21)
+  - Shows once per session after 4 seconds
+  - Styled to match Dotcom Online palette (btn-blue, form-control)
+========================================*/
+.offer-modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 15, 35, 0.72);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  z-index: 9999;
+}
+.offer-modal-overlay.is-visible{display:flex;}
+.offer-modal{
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.25);
+  text-align: center;
+  animation: offerPopIn 0.35s ease;
+}
+@keyframes offerPopIn{
+  from{opacity:0; transform: translateY(20px) scale(0.96);}
+  to{opacity:1; transform: translateY(0) scale(1);}
+}
+.offer-modal-close{
+  position:absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  color: #496174;
+}
+.offer-modal-kicker{
+  display:inline-block;
+  margin: 0 0 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(68,197,238,0.18);
+  color: #496174;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.offer-modal h2{
+  margin: 0 0 12px;
+  color: #496174;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+}
+.offer-modal-subtext{
+  margin: 0 0 22px;
+  color: #6c7a86;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.offer-modal-form{
+  display: grid;
+  gap: 12px;
+}
+.offer-modal-form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+.offer-modal-form select{
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 10px 14px;
+  font: inherit;
+  color: #555;
+  background: rgba(255,255,255,0.86);
+  box-shadow: none !important;
+}
+.offer-modal-form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):focus,
+.offer-modal-form select:focus{
+  outline: none;
+  border-color: #44c5ee;
+  box-shadow: 0 0 0 3px rgba(68,197,238,0.18);
+  background: rgba(255,255,255,0.92);
+}
+.offer-modal-submit{
+  width: 100%;
+  min-height: 52px;
+  margin-top: 4px;
+}
+.offer-modal-submit:hover{
+  transform: translateY(-1px);
+}
+.offer-modal-no-thanks{
+  border: none;
+  background: transparent;
+  color: #496174;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 4px 0 0;
+}
+.offer-modal-footnote{
+  margin: 0;
+  color: #888;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+@media (max-width: 540px){
+  .offer-modal{padding: 26px 20px; border-radius: 8px;}
+  .offer-modal h2{font-size: 2rem;}
+  .offer-modal-subtext{font-size: 0.95rem;}
+}
+
+
+/* Offer modal: Add-ons multi-select dropdown */
+.offer-addons-multiselect{
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+.offer-addons-required{
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  pointer-events: none;
+}
+.offer-addons-toggle{
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 10px 14px;
+  font: inherit;
+  color: #555;
+  background: rgba(255,255,255,0.86);
+  box-shadow: none !important;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.offer-addons-toggle::after{
+  content: "▾";
+  font-size: 12px;
+  opacity: 0.65;
+  margin-left: 12px;
+}
+.offer-addons-toggle:focus{
+  outline: none;
+  border-color: #44c5ee;
+  box-shadow: 0 0 0 3px rgba(68,197,238,0.18) !important;
+  background: rgba(255,255,255,0.92);
+}
+.offer-addons-menu{
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.98);
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0px 18px 60px rgba(0,0,0,0.10);
+  max-height: 240px;
+  overflow: auto;
+  z-index: 10001;
+  display: none;
+}
+.offer-addons-multiselect.is-open .offer-addons-menu{
+  display: block;
+}
+.offer-addons-option{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 4px;
+  margin: 0;
+  font-size: 14px;
+  color: #496174;
+  cursor: pointer;
+}
+.offer-addons-option input[type="checkbox"]{
+  margin: 2px 0 0;
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  min-height: auto;
+  padding: 0;
+  border-radius: 3px;
+  accent-color: #44c5ee;
+}
+.offer-addons-option span{
+  display: block;
+  line-height: 1.35;
+}
+.offer-addons-option:hover{
+  background: rgba(68,197,238,0.10);
+  border-radius: 3px;
+}
+
+
+/* Hero form: prevent signup-form input styles from inflating add-on checkboxes */
+#home .signup-form .addons-menu input[type="checkbox"]{
+  height: 14px !important;
+  width: 14px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+
+
+/* Add-ons dropdown: consistent checkbox sizing + spacing */
+.addons-menu .checkbox-inline input[type="checkbox"]{
+  width: 14px;
+  height: 14px;
+}
+
+
+
+/* v26: Footer brand block alignment (logo + name + tagline) */
+footer .footer-caption{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*========================================
+   v27 header alignment
+   - Align logo + nav links horizontally with the header CTA button
+   - Per request: move logo/links down (do not move CTA up)
+========================================*/
+@media (min-width: 992px){
+  /* Move only the brand/logo and standard nav links down to match the CTA */
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand{
+    position: relative;
+    top: 8px;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.nav.navbar-nav > li.scroll > a{
+    position: relative;
+    top: 8px;
+  }
+}
+
+
+
+/*========================================
+   v28 header alignment
+   - Make logo, nav links, and CTA button align on the same horizontal row
+   - Keep existing header design; only adjust alignment
+========================================*/
+@media (min-width: 992px){
+  /* Undo the prior offset-based tweak */
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand,
+  nav.navbar.bootsnav.navbar-fixed ul.nav.navbar-nav > li.scroll > a{
+    top: auto !important;
+    position: static;
+  }
+
+  /* Align header items using flex (desktop only) */
+  nav.navbar.bootsnav.navbar-fixed .container{
+    display: flex;
+    align-items: center;
+  }
+  nav.navbar.bootsnav.navbar-fixed .navbar-header{
+    display: flex;
+    align-items: center;
+  }
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand{
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  nav.navbar.bootsnav.navbar-fixed .navbar-brand img.logo{
+    display: block; /* remove inline-image baseline gap */
+    height: 42px;
+    width: auto;
+    max-height: 42px;
+    object-fit: contain;
+
+  }
+
+  /* Keep the existing spacing rules; only align */
+  nav.navbar.bootsnav.navbar-fixed .navbar-collapse{
+    flex: 1 1 auto;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.nav.navbar-nav{
+    display: flex;
+    align-items: center;
+    float: none;
+    margin: 0;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.nav.navbar-nav > li{
+    float: none;
+    display: flex;
+    align-items: center;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.nav.navbar-nav > li > a{
+    display: flex;
+    align-items: center;
+  }
+  nav.navbar.bootsnav.navbar-fixed ul.nav > li.button-holder > a.nav-cta{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/*========================================
+  Dotcom Online tweaks (Hero + Pricing)
+  - Keep design intact; improve alignment/layout
+========================================*/
+#home .hero-form-wrap{
+  margin-top: 24px;
+}
+#home .hero-contact-form{
+  width: 100%;
+}
+
+/* Pricing: keep stacks visible (non-overlapping) and widen columns for easier viewing */
+#price .pricing-container.pricing-deck-container > .col-md-4{
+  max-width: 100%;
+  align-items: stretch;
+}
+#price .deck-stack{
+  max-width: 100%;
+  cursor: default;
+}
+#price .deck-stack--decor:not(.deck-stack--ready)::before,
+#price .deck-stack--decor:not(.deck-stack--ready)::after{
+  content: none;
+}
+
+/*========================================
+  Custom edits: v30
+  - Center hero CTA subtext directly under button
+========================================*/
+#home .caption p.button-subtext{
+  display: inline-block;
+  max-width: 560px !important;
+  margin-top: 12px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: center !important;
+}
+
+
+/*========================================
+  Custom edits: v31
+  - Hero CTA subtext: force under button (not inline)
+  - Pricing decks: enable true stacked view + rotate stack on hover
+========================================*/
+#home .caption a.btn-blue{
+  margin-left: 0 !important;
+}
+#home .caption p.button-subtext{
+  display: block !important;
+  width: 100% !important;
+  max-width: 560px !important;
+  margin: 12px auto 0 !important;
+  text-align: center !important;
+}
+
+/* Pricing: rotate the entire stack on hover (hovering top card counts as hovering stack) */
+#price .deck-stack{
+  transition: transform 260ms ease;
+  transform-origin: center;
+}
+#price .deck-stack:hover,
+#price .deck-stack:focus{
+  transform: rotate(-1.2deg);
+}
+
+/* Neutralize any inherited hover-tilt variables so the stack rotation is the only hover motion */
+#price .deck-stack:hover,
+#price .deck-stack:focus{
+  --hover-tilt: 0deg;
+}
